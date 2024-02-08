@@ -23,6 +23,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --couleur-arriere-galerie: #7ee5ff;
   --couleur-arriere-evenement: #ade5ff;
   --couleur-arriere-footer:#258300;
+  --opacite: 0.7;
+  --couleur-h2: #ffae00;
 }
 
 /*************************règles de base********************************/
@@ -34,27 +36,27 @@ h1 {
 
 h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
-  color: rgba(255, 174, 0, 0.7);
+  color: rgba(var(--couleur-h2), var(--opacite));
 }
 
 h3 {
   font-size: clamp(1rem, -2.3333rem + 6.6667vw, 3rem);
-  color: rgba(0, 255, 42, 0.7);
+  color: rgba(0, 255, 42, 0.6);
 }
 
 h4 {
   font-size: clamp(1rem, -2.6667rem + 6.6667vw, 3rem);
-  color: rgba(1, 182, 10, 0.7);
+  color: rgba(1, 182, 10, var(--opacite));
 }
 
 h5 {
   font-size: clamp(1rem, -9.5rem + 13.125vw, 3.625rem);
-  color: rgba(0, 128, 43, 0.7);
+  color: rgba(0, 128, 43, var(--opacite));
 }
 
 h6 {
   font-size: clamp(1rem, -7.3125rem + 11.875vw, 3.375rem);
-  color: rgba(25, 0, 255, 0.7);
+  color: rgba(25, 0, 255, 0.8);
 }
 
 /*************************règles de pagination********************************/
