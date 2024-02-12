@@ -18,13 +18,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 /*************************variables css********************************/
 :root {
-  --couleur-arriere-entete: #2600ff;
-  --couleur-arriere-accueil: #b6f0ff;
-  --couleur-arriere-galerie: #7ee5ff;
-  --couleur-arriere-evenement: #ade5ff;
-  --couleur-arriere-footer:#258300;
+  --couleur-arriere-entete:hsl(230, 100%, 50%);
+  --couleur-arriere-accueil: hsl(180, 100%, 85%);
+  --couleur-arriere-galerie: hsl(190, 100%, 50%);
+  --couleur-arriere-evenement: hsl(180,100%,70%);
+  --couleur-arriere-footer:hsl(140,100%,30%);
   --opacite: 0.7;
   --couleur-h2: #ffae00;
+  --couleur-entete:hsl(230, 100%, 90%);
+  --couleur-accueil: hsl(180, 100%, 15%);
+  --couleur-galerie: hsl(190, 100%, 30%);
+  --couleur-evenement: hsl(180,100%,20%);
+  --couleur-footer:hsl(140,100%,15%);
 }
 
 /*************************règles de base********************************/
@@ -82,20 +87,25 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-accueil);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-galerie);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-evenement);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }/*# sourceMappingURL=style.css.map */
