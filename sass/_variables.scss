@@ -8,6 +8,12 @@
     // --opacite: 0.7;
     // --couleur-h2: #ffae00;
 
+    // --couleur-arriere-entete: hsl(230, 100%, 50%);
+    // --couleur-arriere-accueil: hsl(180, 100%, 85%);
+    // --couleur-arriere-galerie: hsl(190, 100%, 50%);
+    // --couleur-arriere-evenement: hsl(180, 100%, 70%);
+    // --couleur-arriere-footer: hsl(140, 100%, 30%);
+
     --nbr-element: 5;
     // 360/5 = 72
     --increment-angle: calc(360/var(--nbr-element));
@@ -18,24 +24,23 @@
     --hu4: calc(var(--hu3) + var(--increment-angle));
     --hu5: calc(var(--hu4) + var(--increment-angle));
 
+    --s-arriere: 100%;
+    --l-arriere: 50%; //je n'utilise pas les variables de saturation car j'aime les cours que j'ai
+    --s-couleur: 100%;
+    --l-couleur: 15% ;
 
-    // --couleur-arriere-entete: hsl(230, 100%, 50%);
-    // --couleur-arriere-accueil: hsl(180, 100%, 85%);
-    // --couleur-arriere-galerie: hsl(190, 100%, 50%);
-    // --couleur-arriere-evenement: hsl(180, 100%, 70%);
-    // --couleur-arriere-footer: hsl(140, 100%, 30%);
 
-    --couleur-arriere-entete: hsl(var(--hu1), 100%, 50%);
-    --couleur-arriere-accueil: hsl(var(--hu2), 100%, 85%);
-    --couleur-arriere-galerie: hsl(var(--hu3), 100%, 50%);
-    --couleur-arriere-evenement: hsl(var(--hu4), 100%, 70%);
-    --couleur-arriere-footer: hsl(var(--hu5), 100%, 30%);
+    --couleur-arriere-entete: hsl(var(--hu1), var(--s-arriere), 50%);
+    --couleur-arriere-accueil: hsl(var(--hu2), var(--s-arriere), 85%);
+    --couleur-arriere-galerie: hsl(var(--hu3), var(--s-arriere), 50%);
+    --couleur-arriere-evenement: hsl(var(--hu4), var(--s-arriere), 70%);
+    --couleur-arriere-footer: hsl(var(--hu5), var(--s-arriere), 30%);
     --opacite: 0.7;
     --couleur-h2: #ffae00;
 
-    --couleur-entete: hsl(230, 100%, 90%);
-    --couleur-accueil: hsl(180, 100%, 15%);
-    --couleur-galerie: hsl(190, 100%, 30%);
-    --couleur-evenement: hsl(180, 100%, 20%);
-    --couleur-footer: hsl(140, 100%, 15%);
+    --couleur-entete: hsl(var(--hu1), var(--s-arriere), 100%);
+    --couleur-accueil: hsl(var(--hu2), var(--s-arriere), 15%);
+    --couleur-galerie: hsl(var(--hu3), var(--s-arriere), 20%);
+    --couleur-evenement: hsl(var(--hu4), var(--s-arriere), 30%);
+    --couleur-footer: hsl(var(--hu5), var(--s-arriere), 15%);
 }
