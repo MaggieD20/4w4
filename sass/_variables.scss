@@ -43,4 +43,7 @@
     --couleur-galerie: hsl(var(--hu3), var(--s-arriere), var(--l-couleur));
     --couleur-evenement: hsl(var(--hu4), var(--s-arriere), var(--l-couleur));
     --couleur-footer: hsl(var(--hu5), var(--s-arriere), var(--l-couleur));
+
+    --couleur-bouton: hsl(var(--hu1), var(--s-arriere), 60% );
+    --couleur-bouton-border: hsl(var(--hu1), 90%, 20%)
 }

@@ -1,17 +1,17 @@
 /* Sélecteurs textuels de base*/
 
 h1 {
-    font-size: clamp(1rem, -0.5714rem + 8.2857vw, 4.75rem);
+    font-size: clamp(1rem, -0.5714rem + 8.2857vw, 4.75em);
 
 }
 
 h2 {
-    font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
+    font-size: clamp(1rem, -0.5714rem + 6.2857vw, 4rem);
     color: rgba(var(--couleur-h2), var(--opacite));
 }
 
 h3 {
-    font-size: clamp(1rem, -2.3333rem + 6.6667vw, 3rem);
+    font-size: clamp(1rem, -2.3333rem + 6.6667vw, 3.5rem);
 }
 
 h4 {
@@ -20,12 +20,12 @@ h4 {
 }
 
 h5 {
-    font-size: clamp(1rem, -9.5rem + 13.125vw, 3.625rem);
+    font-size: clamp(1rem, -9.5rem + 13.125vw, 2.7rem);
 
 }
 
 h6 {
-    font-size: clamp(1rem, -7.3125rem + 11.875vw, 3.375rem);
+    font-size: clamp(1rem, -7.3125rem + 11.875vw, 2.5rem);
  
 }
 
