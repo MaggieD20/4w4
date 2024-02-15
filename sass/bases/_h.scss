@@ -12,22 +12,27 @@ h2 {
 
 h3 {
     font-size: clamp(1rem, -2.3333rem + 6.6667vw, 3rem);
-    color: rgba(#00ff2a, .6);
 }
 
 h4 {
     font-size: clamp(1rem, -2.6667rem + 6.6667vw, 3rem);
-    color: rgba( #01b60a, var(--opacite));
+
 }
 
 h5 {
     font-size: clamp(1rem, -9.5rem + 13.125vw, 3.625rem);
-    color: rgba(#00802b, var(--opacite));
+
 }
 
 h6 {
     font-size: clamp(1rem, -7.3125rem + 11.875vw, 3.375rem);
-    color: rgba(#1900ff, .8);
+ 
+}
+
+a{
+    font-size: clamp(1rem, -7.3125rem + 11.875vw, 2rem);
+    text-decoration: none;
+    color: hsl(var(--hu1), 50%, 20%);
 }
 
 p {}

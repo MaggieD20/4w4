@@ -18,9 +18,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 /*************************variables css********************************/
 :root {
-  --nbr-element: 5;
+  --nbr-element: 3;
   --increment-angle: calc(360/var(--nbr-element));
-  --angle-initial: 130;
+  --angle-initial: 180;
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--increment-angle));
   --hu3: calc(var(--hu2) + var(--increment-angle));
@@ -57,22 +57,24 @@ h2 {
 
 h3 {
   font-size: clamp(1rem, -2.3333rem + 6.6667vw, 3rem);
-  color: rgba(0, 255, 42, 0.6);
 }
 
 h4 {
   font-size: clamp(1rem, -2.6667rem + 6.6667vw, 3rem);
-  color: rgba(1, 182, 10, var(--opacite));
 }
 
 h5 {
   font-size: clamp(1rem, -9.5rem + 13.125vw, 3.625rem);
-  color: rgba(0, 128, 43, var(--opacite));
 }
 
 h6 {
   font-size: clamp(1rem, -7.3125rem + 11.875vw, 3.375rem);
-  color: rgba(25, 0, 255, 0.8);
+}
+
+a {
+  font-size: clamp(1rem, -7.3125rem + 11.875vw, 2rem);
+  text-decoration: none;
+  color: hsl(var(--hu1), 50%, 20%);
 }
 
 /*************************règles de pagination********************************/
@@ -99,6 +101,7 @@ body {
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
+  position: relative;
 }
 
 #accueil {
@@ -109,14 +112,80 @@ body {
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
+  z-index: 1;
+  background-color: linear-gradient(180deg, var(--couleur-arriere-accueil) 50%, var(--couleur-arriere-evenement) 50%);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
+  position: relative;
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+}
+
+button {
+  background-color: var(--couleur-arriere-entete);
+  padding: 2.5rem 5rem;
+  font-size: 3rem;
+  color: var(--couleur-arriere-footer);
+  border: 7px solid var(--couleur-entete);
+  border-radius: 5%;
+  align-self: flex-end;
+}
+
+.vague {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 101px;
+  transform: rotateY(180deg);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .vague svg {
+    width: calc(100% + 1.3px);
+    height: 101px;
+  }
+}
+.diagonal {
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: skewY(-10deg);
+  background-color: var(--couleur-arriere-galerie);
+}
+
+.diagonal::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: skewY(10deg);
+  background-color: var(--couleur-arriere-galerie);
 }/*# sourceMappingURL=style.css.map */

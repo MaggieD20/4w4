@@ -14,10 +14,10 @@
     // --couleur-arriere-evenement: hsl(180, 100%, 70%);
     // --couleur-arriere-footer: hsl(140, 100%, 30%);
 
-    --nbr-element: 5;
+    --nbr-element: 3;
     // 360/5 = 72
     --increment-angle: calc(360/var(--nbr-element));
-    --angle-initial: 130;
+    --angle-initial: 180;
     --hu1: var(--angle-initial);
     --hu2: calc(var(--hu1) + var(--increment-angle));
     --hu3: calc(var(--hu2) + var(--increment-angle));
