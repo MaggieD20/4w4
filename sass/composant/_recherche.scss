@@ -1,13 +1,13 @@
-.recherche{
+.recherche {
     display: flex;
-    border: 1px solid wheat;
     justify-content: center;
+
 }
 
-.recherche__input{
+.recherche__input {
     display: block;
 }
 
-.recherche__button{
-    
+.recherche__button {
+    background-color: var(--couleur-arriere-galerie);
 }

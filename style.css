@@ -222,19 +222,23 @@ body {
 .footer__section {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
+  gap: 2rem;
 }
 
 /***********************Les composants**************************/
 .recherche {
   display: flex;
-  border: 1px solid wheat;
   justify-content: center;
 }
 
 .recherche__input {
   display: block;
+}
+
+.recherche__button {
+  background-color: var(--couleur-arriere-galerie);
 }
 
 .sociaux {
