@@ -1,5 +1,7 @@
 a{
-    color: var(--couleur-lien);
+    font-size: clamp(1rem, -7.3125rem + 11.875vw, 2rem);
+    text-decoration: none;
+    color: pink;
 }
 
 a:hover, a:focus{

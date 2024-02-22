@@ -34,5 +34,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @import "effets/diagonal.scss";
 
+
+/**********************Sections de la page*************************/
 @import "entete";
 
+@import "footer.scss";
+
+
+/***********************Les composants**************************/
+@import "composant/recherche";
+@import "composant/sociaux";
