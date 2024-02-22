@@ -1,15 +1,18 @@
 a{
     font-size: clamp(1rem, -7.3125rem + 11.875vw, 2rem);
-    text-decoration: none;
-    color: pink;
+    text-decoration: 1px dotted;
+    color: var(--couleur-lien);
 }
+a:visited{
 
-a:hover, a:focus{
+  color: var(--couleur-lien-visited);
+
+}
+a:focus{
+    color: var(--couleur-lien-focus);
+
+}
+a:hover{
     color: var(--couleur-lien-hover);
 }
 
-a:visited{
-
-    color: var(--couleur-lien-visited);
-
-}
