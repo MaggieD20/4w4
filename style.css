@@ -224,6 +224,11 @@ body {
   background-position: 100% 50%;
 }
 
+@media (max-width: 720px) {
+  .entete__header {
+    background-position: 50% 50%;
+  }
+}
 .footer__section {
   display: flex;
   flex-direction: column;
