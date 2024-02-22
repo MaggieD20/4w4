@@ -218,7 +218,7 @@ body {
 
 /**********************Sections de la page*************************/
 .entete__header {
-  background-image: url("../images/agile.png");
+  background-image: url("./images/agile.png");
   background-repeat: no-repeat;
   background-size: 10rem;
   background-position: 100% 50%;
