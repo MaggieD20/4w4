@@ -23,6 +23,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /*************************règles de base********************************/
 @import "bases/h";
+@import "bases/liens";
+@import "bases/bouton";
+
 
 /*************************règles de pagination********************************/
 @import "layout";
@@ -30,3 +33,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "effets/vague.scss";
 
 @import "effets/diagonal.scss";
+
+@import "entete";
+

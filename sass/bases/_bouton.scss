@@ -1,0 +1,14 @@
+header button {
+    font-size: clamp(1rem, -0.375rem + 3vw, 2.5rem);
+    padding: 24px 12px;
+    background-image: linear-gradient(90deg, red, yellow);
+    transition: transform 0.02s;
+
+    &:hover{ 
+    background-image: linear-gradient(90deg, yellow, red);
+    }
+
+    &:active{
+
+    }
+}

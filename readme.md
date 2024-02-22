@@ -1,38 +1,30 @@
-# laboratoire #1 
-## Introduction à sass et revision html/css
-###  concevoir une page de plusieurs sections qui contient éléments:
--dossier sass
--normalize.css
--styles.css
+# EXERCICE 1
+## Reproduire et améliorer la maquette exemple présenté au cours
+
+### Continuer la version du lab #2
+
+-Améliorer le dossier sass
+-Ajout dans style.scss
+-utilisations de différentes techniques pour élaborer une palette de couleur
+    -monochrome(une teinte avec différentes saturations et luminosités)
+    -complementaire(deux teintes gérer par opposition)
+    -triade(trois teintes de +/- 120%)
+    -utiliser la règle 60-30-10(background-lecture-)
+    -améliorer l'entête avec une image en background qui s'enligne horizontalement avec les titres de l'entête
+    -création bouton utilisant des variables, la propriété backgruound-image, et linear-gradient, le bouton réagit aux évenements hover et :actived
+    -création de liens réagissants aux évenements :hover :visited :focus
+    -amélioration générale de la pagination
 
 À réaliser pour :
--compléter chacune des règles de styles des éléments H
--changer les couleurs de background et couleur des H
--améliorer les design général sans être trop spécifique
--Ajouter deux variables
--créer plusieur commit
--une github-page
+-améliorer l'entête
+-ajouter une image
+-ajouter un bouton
+-ajouter des liens
+-améliorer la pagination
+-ajouter de nouveaux éléments HTML
+-une github-Page
 
-
-# laboratoire #2
-## création d'une palette de couleur avec la fonction hsl
-## ajouter des effets de vagues et une diagonal
-
-### Continuer la version du lab #1
-
-- dossier sass
-- styles.css
-- utilisation de différentes techniques pour élaborer les couleurs
-- utilisatin règle 60-30-10
-
-À réaliser:
-- compléter chacune des règles de styles des éléments H
-- changer les couleurs de background et couleur des H
-- ajouter des éléments boutons, lien a, blockquotes
-- améliorer les design général sans être trop spécifique
-- Ajouter deux variables
-- créer plusieur commit
-- une github-page
 
 ### ma github page
+
 https://maggied20.github.io/4w4/
