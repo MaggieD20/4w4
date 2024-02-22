@@ -44,7 +44,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --couleur-footer: hsl(var(--hu5), var(--s-arriere), var(--l-couleur));
   --couleur-bouton: hsl(var(--hu1), var(--s-arriere), 60% );
   --couleur-bouton-border: hsl(var(--hu1), 90%, 20%)
-  --couleur-lien: green;
+  --couleur-lien: ;
   --couleur-lien-hover: ;
   --couleur-lien-visited: ;
 }
