@@ -45,5 +45,11 @@
     --couleur-footer: hsl(var(--hu5), var(--s-arriere), var(--l-couleur));
 
     --couleur-bouton: hsl(var(--hu1), var(--s-arriere), 60% );
-    --couleur-bouton-border: hsl(var(--hu1), 90%, 20%)
+    --couleur-bouton-border: hsl(var(--hu1), 90%, 20%);
+
+    --couleur-lien: hsl(var(--hu2), var(--s-arriere), 15%);
+    --couleur-lien-hover: hsl(var(--hu2), var(--s-arriere), 80%);
+    --couleur-lien-focus: hsl(var(--hu1), var(--s-arriere), 40%);
+    --couleur-lien-visited: hsl(var(--hu1), var(--s-arriere), 10%);
+   
 }

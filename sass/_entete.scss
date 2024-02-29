@@ -1,0 +1,12 @@
+.entete__header{
+    background-image: url("./images/agile.png");
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    background-position: 100% 50%;
+}
+
+@media (max-width: 720px) {
+    .entete__header{
+    background-position: 50% 50%;
+    }
+}

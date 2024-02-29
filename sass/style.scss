@@ -23,10 +23,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /*************************règles de base********************************/
 @import "bases/h";
+@import "bases/liens";
+@import "bases/bouton";
+
 
 /*************************règles de pagination********************************/
 @import "layout";
-
 @import "effets/vague.scss";
-
 @import "effets/diagonal.scss";
+
+/**********************Sections de la page*************************/
+@import "entete";
+@import "footer.scss";
+
+/***********************Les composants**************************/
+@import "composant/recherche";
+@import "composant/sociaux";
+@import "composant/carte";

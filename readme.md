@@ -1,38 +1,35 @@
-# laboratoire #1 
-## Introduction à sass et revision html/css
-###  concevoir une page de plusieurs sections qui contient éléments:
--dossier sass
--normalize.css
--styles.css
+# Marguerite Demontigny
 
-À réaliser pour :
--compléter chacune des règles de styles des éléments H
--changer les couleurs de background et couleur des H
--améliorer les design général sans être trop spécifique
--Ajouter deux variables
--créer plusieur commit
--une github-page
+# Labo #3
+## Création d'un site WP.
+- Adaptation du thème de exercice #1
+- Création du modèle index.php
+- Création de la branche labo3
+- minimum 3 commits
+- Un Readme.md qui contiendra:
+    - Le nom de l'auteur
+    - L'objectif du labo3
+    - Les réalisations
+    - Un lien vers la github-page
+- Décomposé le titre de chaque cours:
+    - sigle du cours ex: 582-4W4
+    - le titre du cours  ex: Conception d'interface et développement Web
+    - la durée du cours : 90h
 
+- Garder les 30 premiers mots de la description du cours.
 
-# laboratoire #2
-## création d'une palette de couleur avec la fonction hsl
-## ajouter des effets de vagues et une diagonal
+### La section galerie (ou autre section) affichera la liste des cours du TIM en 3 ou 4 colonnes.
+- La liste devra s'adapter aux différentes largeurs de fenêtre, en mobile une seule colonne.
+- Chacune des cartes de cours sera formatés en en utilisant les flex box
 
-### Continuer la version du lab #1
+### Barème de correction
+- Organistion du code, 3 commits minimum (1 point)
+- Résultat sous forme de github page avec index.htm (.5 point)
+- Design global de la page (.5 point)
 
-- dossier sass
-- styles.css
-- utilisation de différentes techniques pour élaborer les couleurs
-- utilisatin règle 60-30-10
-
-À réaliser:
-- compléter chacune des règles de styles des éléments H
-- changer les couleurs de background et couleur des H
-- ajouter des éléments boutons, lien a, blockquotes
-- améliorer les design général sans être trop spécifique
-- Ajouter deux variables
-- créer plusieur commit
-- une github-page
 
 ### ma github page
+
 https://maggied20.github.io/4w4/
+
+
