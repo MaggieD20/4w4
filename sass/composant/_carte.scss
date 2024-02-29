@@ -1,6 +1,7 @@
 .section__cours{
     display: flex;
-
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .carte{
