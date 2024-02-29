@@ -20,7 +20,7 @@
             <h1>Theme</h1>
             <h2>4w4 - conception d'interfarce et développement web</h2>
             <h3>TIM collège de Maisonneuve</h3>
-            <button>Évenements</button>
+            <button class="entete__button">Évenements</button>
         </header>
         <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
