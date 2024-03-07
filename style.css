@@ -301,6 +301,7 @@ body {
 
 .menu-principal-container {
   border: 1px solid black;
+  border-radius: 15%;
   background-color: white;
   position: absolute;
   top: 0;
@@ -312,6 +313,8 @@ body {
   .menu-principal-container {
     position: static;
     transform: translateX(0);
+    border: 5px solid black;
+    border-radius: 30%;
   }
 }
 
