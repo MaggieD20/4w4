@@ -145,6 +145,7 @@ body {
 .entete__header, .entete__menu {
   flex: 0 1 1500px;
   position: relative;
+  padding: 0;
 }
 
 #entete {
@@ -300,6 +301,7 @@ body {
 
 .menu-principal-container {
   border: 1px solid black;
+  background-color: white;
   position: absolute;
   top: 0;
   left: 50px;
