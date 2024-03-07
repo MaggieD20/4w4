@@ -7,21 +7,25 @@ body {
 .global {
     display: flex;
     justify-content: center;
-    min-height: 30vh;
+    // min-height: 30vh;
 }
 
 .global>section,
-.global>header,
-.global>footer {
+.global> .entete__header,
+.global>footer,
+.global> .entete__menu {
     //flex: grow(0= ne peut pas grossir plus que la taille), shrink, taille
-    flex: 0 1 900px;
+    flex: 0 1 1100px;
     // border: 1px solid black;
     background-color: rgba(#ffffff, .2);
     padding: 5rem 1rem;
 }
 
-.global>header{
-    flex: 0 1 1100px;
+.entete__header, .entete__menu{
+
+    flex: 0 1 1500px;
+
+    position: relative;
 }
 
 #entete {
@@ -63,3 +67,4 @@ body {
 //     border-radius: 5%;
 //     align-self: flex-end;
 // }
+

@@ -1,35 +1,37 @@
-.section__cours{
+// .section__cours{
+//     display: flex;
+//     flex-direction:row;
+//     gap: 2rem;
+// }
+
+// .carte{
+
+//     border: 5px solid black;
+//     display: flex;
+//     flex: 0 1 1100px/4;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     background-color: hsl(var(--hu2), 100%, 75%);
+// }
+
+
+
+.section__cours {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.carte{
-    
+.carte {
     border: 5px solid black;
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
     justify-content: space-around;
-    background-color: hsl(var(--hu2), 100%, 75%);
+    align-items: center;
+    flex: 0 1 calc(1010px/4);
+    background-color: hsl(var(--hu2), 100%, 80%);
 }
 
-@media (min-width: 767px) {
-
-    .section__cours{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-    
-    .carte{
-        border: 5px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        flex: 0 1 25%;
-        background-color: hsl(var(--hu2), 100%, 80%);
-    }
-
+.carte *{
+    align-items: center;
 }

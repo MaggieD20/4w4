@@ -49,6 +49,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --couleur-lien-focus: hsl(var(--hu1), var(--s-arriere), 40%);
   --couleur-lien-visited: hsl(var(--hu1), var(--s-arriere), 10%);
 }
+:root #entete {
+  --_couleur-arriere-vague: hsl(var(--hu2), var(--s-arriere), 50%);
+}
+:root #evenement {
+  --_couleur-arriere-vague:hsl(var(--hu5), var(--s-arriere), 50%);
+}
 
 /*************************règles de base********************************/
 /* Sélecteurs textuels de base*/
@@ -125,19 +131,20 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 30vh;
 }
 
 .global > section,
-.global > header,
-.global > footer {
-  flex: 0 1 900px;
+.global > .entete__header,
+.global > footer,
+.global > .entete__menu {
+  flex: 0 1 1100px;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 5rem 1rem;
 }
 
-.global > header {
-  flex: 0 1 1100px;
+.entete__header, .entete__menu {
+  flex: 0 1 1500px;
+  position: relative;
 }
 
 #entete {
@@ -184,6 +191,10 @@ body {
   width: calc(100% + 1.3px);
   height: 101px;
   transform: rotateY(180deg);
+}
+
+.remplissage {
+  fill: var(--_couleur-arriere-vague);
 }
 
 /** For mobile devices **/
@@ -269,32 +280,80 @@ body {
 
 .section__cours {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .carte {
   border: 5px solid black;
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
   justify-content: space-around;
-  background-color: hsl(var(--hu2), 100%, 75%);
+  align-items: center;
+  flex: 0 1 252.5px;
+  background-color: hsl(var(--hu2), 100%, 80%);
 }
 
-@media (min-width: 767px) {
-  .section__cours {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
+.carte * {
+  align-items: center;
+}
+
+.menu-principal-container {
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: 2;
+  transform: translateX(-200%);
+}
+@media screen and (min-width: 720px) {
+  .menu-principal-container {
+    position: static;
+    transform: translateX(0);
   }
-  .carte {
-    border: 5px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex: 0 1 25%;
-    background-color: hsl(var(--hu2), 100%, 80%);
+}
+
+#menu-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style-type: none;
+}
+@media screen and (min-width: 720px) {
+  #menu-principal {
+    flex-direction: row;
+    justify-content: space-between;
+    flex: wrap;
+  }
+}
+
+#chk_burger {
+  display: none;
+}
+
+#burger {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 720px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk_burger:checked ~ .menu-principal-container {
+  transform: translateX(0%);
+}
+
+/***********************Classes Utiles**************************/
+.bgc-texte {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (min-width: 720px) {
+  .bgc-texte {
+    background-color: transparent;
   }
 }/*# sourceMappingURL=style.css.map */
