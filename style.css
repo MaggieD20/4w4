@@ -330,6 +330,10 @@ body {
   }
 }
 
+.menu-item {
+  padding: 5px 15px;
+}
+
 #chk_burger {
   display: none;
 }
