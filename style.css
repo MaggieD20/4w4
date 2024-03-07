@@ -326,7 +326,7 @@ body {
   #menu-principal {
     flex-direction: row;
     justify-content: space-between;
-    flex: wrap;
+    flex-wrap: wrap;
   }
 }
 

@@ -46,6 +46,7 @@
     @media screen and (min-width:720px) {
         position: static;
         transform: translateX(0);
+        
     }
 }
 
@@ -61,7 +62,7 @@
     @media screen and (min-width:720px) {
         flex-direction: row;
         justify-content: space-between;
-        flex: wrap;
+        flex-wrap: wrap;
     }
 }
 
