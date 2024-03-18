@@ -299,6 +299,11 @@ body {
   align-items: center;
 }
 
+.carte .post-categories {
+  list-style-type: none;
+  display: flex;
+}
+
 .menu-principal-container {
   border: 1px solid black;
   border-radius: 15%;
