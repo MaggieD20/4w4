@@ -25,10 +25,11 @@
 .carte {
     border: 5px solid black;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    flex: 0 1 calc(1010px/4);
+    flex: 0 1 calc(800px/4);
     background-color: hsl(var(--hu2), 100%, 80%);
 }
 
@@ -39,4 +40,7 @@
 .carte .post-categories{
     list-style-type: none;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
 }

@@ -19,7 +19,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 // https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 
 /*************************variables css********************************/
-@import "variables";
+@import "utile/couleurs";
+@import "utile/couleurs-class"
 
 /*************************règles de base********************************/
 @import "bases/h";

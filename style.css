@@ -17,6 +17,154 @@ ce theme a été est développer dans le cadre du cours 4w4
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 /*************************variables css********************************/
+.clr-primaire-100 {
+  color: hsl(220, 100%, 85%);
+}
+
+.bck-primaire-100 {
+  background-color: hsl(220, 100%, 85%);
+}
+
+.clr-primaire-200 {
+  color: hsl(220, 100%, 60%);
+}
+
+.bck-primaire-200 {
+  background-color: hsl(220, 100%, 60%);
+}
+
+.clr-primaire-300 {
+  color: hsl(220, 100%, 30%);
+}
+
+.bck-primaire-300 {
+  background-color: hsl(220, 100%, 30%);
+}
+
+.clr-primaire-400 {
+  color: hsl(220, 100%, 15%);
+}
+
+.bck-primaire-400 {
+  background-color: hsl(220, 100%, 15%);
+}
+
+.clr-secondaire-100 {
+  color: hsl(40, 100%, 85%);
+}
+
+.bck-secondaire-100 {
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-secondaire-200 {
+  color: hsl(40, 100%, 50%);
+}
+
+.bck-secondaire-200 {
+  background-color: hsl(40, 100%, 50%);
+}
+
+.clr-secondaire-300 {
+  color: hsl(40, 100%, 30%);
+}
+
+.bck-secondaire-300 {
+  background-color: hsl(40, 100%, 30%);
+}
+
+.clr-secondaire-400 {
+  color: hsl(40, 100%, 15%);
+}
+
+.bck-secondaire-400 {
+  background-color: hsl(40, 100%, 15%);
+}
+
+.clr-ternaire-100 {
+  color: hsl(10, 100%, 85%);
+}
+
+.bck-ternaire-100 {
+  background-color: hsl(10, 100%, 85%);
+}
+
+.clr-ternaire-200 {
+  color: hsl(10, 100%, 50%);
+}
+
+.bck-ternaire-200 {
+  background-color: hsl(10, 100%, 50%);
+}
+
+.clr-ternaire-300 {
+  color: hsl(10, 100%, 30%);
+}
+
+.bck-ternaire-300 {
+  background-color: hsl(10, 100%, 30%);
+}
+
+.clr-ternaire-400 {
+  color: hsl(10, 100%, 15%);
+}
+
+.bck-ternaire-400 {
+  background-color: hsl(10, 100%, 15%);
+}
+
+.clr-vert-100 {
+  color: hsl(70, 100%, 85%);
+}
+
+.bck-vert-100 {
+  background-color: hsl(70, 100%, 85%);
+}
+
+.clr-vert-200 {
+  color: hsl(70, 100%, 50%);
+}
+
+.bck-vert-200 {
+  background-color: hsl(70, 100%, 50%);
+}
+
+.clr-vert-300 {
+  color: hsl(70, 100%, 30%);
+}
+
+.bck-vert-300 {
+  background-color: hsl(70, 100%, 30%);
+}
+
+.clr-vert-400 {
+  color: hsl(70, 100%, 15%);
+}
+
+.bck-vert-400 {
+  background-color: hsl(70, 100%, 15%);
+}
+
+.clr-agencement-primaire {
+  color: hsl(220, 100%, 15%);
+  background-image: linear-gradient(90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+}
+
+.clr-agencement-secondaire {
+  color: hsl(40, 100%, 15%);
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-agencement-ternaire {
+  color: hsl(10, 100%, 15%);
+  background-color: hsl(10, 100%, 85%);
+}
+
+.clr-agencement-vert {
+  color: hsl(70, 100%, 15%);
+  background-color: hsl(70, 100%, 85%);
+}
+
 :root {
   --nbr-element: 3;
   --increment-angle: calc(360/var(--nbr-element));
@@ -42,7 +190,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --couleur-galerie: hsl(var(--hu3), var(--s-arriere), var(--l-couleur));
   --couleur-evenement: hsl(var(--hu4), var(--s-arriere), var(--l-couleur));
   --couleur-footer: hsl(var(--hu5), var(--s-arriere), var(--l-couleur));
-  --couleur-bouton: hsl(var(--hu1), var(--s-arriere), 60% );
+  --couleur-bouton: hsl(var(--hu1), var(--s-arriere), 60%);
   --couleur-bouton-border: hsl(var(--hu1), 90%, 20%);
   --couleur-lien: hsl(var(--hu2), var(--s-arriere), 15%);
   --couleur-lien-hover: hsl(var(--hu2), var(--s-arriere), 80%);
@@ -53,7 +201,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --_couleur-arriere-vague: hsl(var(--hu2), var(--s-arriere), 50%);
 }
 :root #evenement {
-  --_couleur-arriere-vague:hsl(var(--hu5), var(--s-arriere), 50%);
+  --_couleur-arriere-vague: hsl(var(--hu5), var(--s-arriere), 50%);
 }
 
 /*************************règles de base********************************/
@@ -288,10 +436,11 @@ body {
 .carte {
   border: 5px solid black;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  flex: 0 1 252.5px;
+  flex: 0 1 200px;
   background-color: hsl(var(--hu2), 100%, 80%);
 }
 
@@ -302,6 +451,9 @@ body {
 .carte .post-categories {
   list-style-type: none;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
 }
 
 .menu-principal-container {
