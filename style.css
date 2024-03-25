@@ -325,6 +325,10 @@ body {
   color: var(--couleur-footer);
 }
 
+a .custom-logo-link {
+  position: relative;
+}
+
 .vague {
   position: absolute;
   bottom: -2px;
@@ -427,7 +431,7 @@ body {
   fill: var(--couleur-arriere-entete);
 }
 
-.section__cours {
+.section__ville {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;

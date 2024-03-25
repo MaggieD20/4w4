@@ -31,10 +31,6 @@ Ajouter l'adresse de la github-page dans votre readme.
 Le non de l'auteur
 Courte description de votre tp1 
 
-### Liens URL:
-
--liens vers le serveur destant whc.ca
-
 ### ma github page
 https://maggied20.github.io/4w4/
 
