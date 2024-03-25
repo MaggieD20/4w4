@@ -45,7 +45,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --couleur-bouton: hsl(var(--hu1), var(--s-arriere), 60%);
   --couleur-bouton-border: hsl(var(--hu1), 90%, 20%);
   --couleur-lien: hsl(var(--hu2), var(--s-arriere), 15%);
-  --couleur-lien-hover: hsl(var(--hu2), var(--s-arriere), 80%);
+  --couleur-lien-hover: hsl(var(--hu1), var(--s-arriere), 80%);
   --couleur-lien-focus: hsl(var(--hu1), var(--s-arriere), 40%);
   --couleur-lien-visited: hsl(var(--hu1), var(--s-arriere), 10%);
 }
@@ -184,6 +184,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
   background-color: hsl(70, 100%, 15%);
 }
 
+.clr-biclr-rose {
+  color: --couleur-arriere-accueil;
+}
+
+.bck-biclr-rose {
+  background-color: --couleur-arriere-accueil;
+}
+
+.clr-biclr-jaune {
+  color: --couleur-arriere-galerie;
+}
+
+.bck-biclr-jaune {
+  background-color: --couleur-arriere-galerie;
+}
+
 .clr-agencement-primaire {
   color: hsl(220, 100%, 15%);
   background-image: linear-gradient(90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
@@ -202,6 +218,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .clr-agencement-vert {
   color: hsl(70, 100%, 15%);
   background-color: hsl(70, 100%, 85%);
+}
+
+.fd-couleur-biclr {
+  color: --couleur-arriere-accueil;
+  background-color: --couleur-arriere-galerie;
 }
 
 /*************************règles de base********************************/
@@ -253,6 +274,7 @@ a:focus {
 
 a:hover {
   color: var(--couleur-lien-hover);
+  text-decoration: underline;
 }
 
 button.entete__button {
@@ -384,7 +406,7 @@ body {
 
 /**********************Sections de la page*************************/
 .entete__header {
-  background-image: url("../images/avion-fond.jpg");
+  background-image: url("../images/avion-icone.png");
   background-repeat: no-repeat;
   background-size: 10rem;
   background-position: 100% 50%;
@@ -456,6 +478,12 @@ body {
   align-self: center;
 }
 
+#menu .global .clr-agencement-primaire {
+  display: flex;
+  justify-content: center;
+  background-color: gold;
+}
+
 .menu-principal-container {
   border: 1px solid black;
   border-radius: 15%;
@@ -512,11 +540,6 @@ body {
 
 #chk_burger:checked ~ .menu-principal-container {
   transform: translateX(0%);
-}
-
-a .custom-logo-link {
-  position: absolute;
-  left: 50%;
 }
 
 /***********************Classes Utiles**************************/

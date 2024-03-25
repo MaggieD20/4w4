@@ -35,15 +35,13 @@
     </section>
 </div>
 
-<div class="global">
-    <section>
+<div class="global fd-couleur-biclr">
+    <section class="section__ville">
         <?php
         $categories = get_categories();
-
         // Boucle sur chaque catégorie
         foreach ($categories as $category) { ?>
-        <div class="carte"></div>
-        <?php  
+        <?php
             // Récupérer le lien vers la catégorie
             $category_link = get_category_link($category->term_id);
             // Récupérer le nombre d'articles dans la catégorie
@@ -62,15 +60,16 @@
             echo '</div>';
         }
         ?>
+        
     </section>
 </div>
 
-<div id="galerie" class="global diagonal">
-    <section class="galerie__section">
-        <h2>galerie</h2>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio corrupti tempora dolores
-        </h4>
-    </section>
+<div id= " galerie" class="global diagonal">
+        <section class="galerie__section">
+            <h2>galerie</h2>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio corrupti tempora dolores
+            </h4>
+        </section>
 </div>
 <div id="evenement" class="global">
     <section class="evenement__section">

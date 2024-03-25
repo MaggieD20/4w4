@@ -31,6 +31,11 @@
 //     </ul></div>        </nav>
 // </div>
 
+#menu .global .clr-agencement-primaire{
+    display: flex;
+    justify-content: center;
+    background-color: gold;
+}
 
 .menu-principal-container {
     // nav 
@@ -98,7 +103,10 @@
     transform: translateX(0%);
 }
 
-a .custom-logo-link{
-    position: absolute;
-    left: 50%;
-}
+// .custom-logo-link{
+//     z-index: 3;
+//     position: fixed;
+//     left: 20%;
+//     top: 5%;
+//     rotate: 20deg;
+// }

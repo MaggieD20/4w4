@@ -23,6 +23,9 @@ $--clr-vert-leger : hsl(70, 100%, 50%);
 $--clr-vert-moyen : hsl(70, 100%, 30%);
 $--clr-vert-fonce : hsl(70, 100%, 15%);
 
+$--clr-jaune:--couleur-arriere-galerie;
+$--clr-rose:--couleur-arriere-accueil;
+
 // création du mapping des couleurs
 
 $defaut: (
@@ -41,7 +44,9 @@ $defaut: (
     vert : (100: $--clr-vert-pale,
         200: $--clr-vert-leger,
         300: $--clr-vert-moyen,
-        400: $--clr-vert-fonce )
+        400: $--clr-vert-fonce ),
+        biclr: (rose:$--clr-rose,
+        jaune:$--clr-jaune)
 );
 
 
@@ -51,6 +56,7 @@ $agencement-couleur :(primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bl
     ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
     vert: ($--clr-vert-fonce, $--clr-vert-pale));
 
+$fond-couleur : (biclr: ($--clr-rose, $--clr-jaune));
 
 
 :root {
@@ -103,7 +109,7 @@ $agencement-couleur :(primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bl
     --couleur-bouton-border: hsl(var(--hu1), 90%, 20%);
 
     --couleur-lien: hsl(var(--hu2), var(--s-arriere), 15%);
-    --couleur-lien-hover: hsl(var(--hu2), var(--s-arriere), 80%);
+    --couleur-lien-hover: hsl(var(--hu1), var(--s-arriere), 80%);
     --couleur-lien-focus: hsl(var(--hu1), var(--s-arriere), 40%);
     --couleur-lien-visited: hsl(var(--hu1), var(--s-arriere), 10%);
 
