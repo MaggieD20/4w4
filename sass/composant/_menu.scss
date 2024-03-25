@@ -97,3 +97,8 @@
 #chk_burger:checked~.menu-principal-container {
     transform: translateX(0%);
 }
+
+a .custom-logo-link{
+    position: absolute;
+    left: 50%;
+}

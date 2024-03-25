@@ -325,10 +325,6 @@ body {
   color: var(--couleur-footer);
 }
 
-a .custom-logo-link {
-  position: relative;
-}
-
 .vague {
   position: absolute;
   bottom: -2px;
@@ -516,6 +512,11 @@ a .custom-logo-link {
 
 #chk_burger:checked ~ .menu-principal-container {
   transform: translateX(0%);
+}
+
+a .custom-logo-link {
+  position: absolute;
+  left: 50%;
 }
 
 /***********************Classes Utiles**************************/
