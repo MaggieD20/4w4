@@ -15,69 +15,93 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Darumadrop+One&family=Single+Day&display=swap" rel="stylesheet">
 
 </head>
-<?php
-// modele
-?>
 
-<?php get_header(); ?>
-
+<body>
+    <div id="menu" class="global clr-agencement-primaire">
+        <!-- permet d'ajouter un logo qui a été choisi à l'Aide du personnaliser (custom) -->
+        <a href="http://localhost/bd-4w4/" class="custom-logo-link" rel="home" aria-current="page"><img width="100" height="100" src="http://localhost/bd-4w4/wp-content/uploads/2024/03/avion-icone-2.png" class="custom-logo" alt="Le monde dans sa main" decoding="async" /></a>        <header class="entete__menu">
+            <label id="burger" for="chk_burger"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg></label>
+            <input id="chk_burger" type="checkbox">
+            <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-74" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74"><a href="http://localhost/bd-4w4/category/aventure/">Aventure</a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-75"><a href="http://localhost/bd-4w4/category/croisiere/">croisière</a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-76"><a href="http://localhost/bd-4w4/category/culturel/">Culturel</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-77"><a href="http://localhost/bd-4w4/category/economique/">Économique</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-79"><a href="http://localhost/bd-4w4/category/pleine-nature/">Pleine nature</a></li>
+<li id="menu-item-80" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80"><a href="http://localhost/bd-4w4/category/repos/">Repos</a></li>
+<li id="menu-item-81" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-81"><a href="http://localhost/bd-4w4/category/sport/">Sport</a></li>
+<li id="menu-item-82" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-82"><a href="http://localhost/bd-4w4/category/zen/">Zen</a></li>
+</ul></nav>        </header>
+    </div>
 
 <div id="entete" class="global">
     <section class="entete__header">
-        <h1 class="bgc-texte"><?php echo get_bloginfo('name'); ?> </h1>
-        <h2 class="bgc-texte"><?php echo get_bloginfo('description'); ?></h2>
+        <h1 class="bgc-texte">Le monde dans sa main </h1>
+        <h2 class="bgc-texte">Sous un bon ciel</h2>
         <h3 class="bgc-texte">TIM collège de Maisonneuve</h3>
         <button class="entete__button">Évenements</button>
     </section>
-    <?php get_template_part("gabarit/vague"); ?>
-</div>
+    <div class="vague">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path class="remplissage" d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"></path>
+        </svg>
+    </div></div>
 <div id="accueil" class="global">
     <section class="accueil__section">
         <h2>Accueil(h2)</h2>
         <div class="section__ville">
 
-            <?php if (have_posts()) :
-                while (have_posts()) : the_post(); ?>
-
+            
                     <div class="carte">
 
-                        <h4><?php the_title() ?></h4>
-                        <?php echo wp_trim_words(get_the_content(), 30); ?>
-                        <p> <a href="<?php echo get_permalink() ?>">voir la suite</a></p>
-                        <?php the_category() ?>
-                    </div>
-                <?php endwhile; ?>
-            <?php endif;  ?>
-        </div>
+                        <h4>Kyoto, Japon</h4>
+                        Kyoto incarne l'essence même de la tradition japonaise. En tant qu'ancienne capitale impériale, la ville regorge de temples bouddhistes, de jardins zen et de quartiers préservés, offrant une immersion dans…                        <p> <a href="http://localhost/bd-4w4/kyoto-japon/">voir la suite</a></p>
+                        <ul class="post-categories">
+	<li><a href="http://localhost/bd-4w4/category/culturel/" rel="category tag">Culturel</a></li>
+	<li><a href="http://localhost/bd-4w4/category/populaire/" rel="category tag">Populaire</a></li>
+	<li><a href="http://localhost/bd-4w4/category/repos/" rel="category tag">Repos</a></li>
+	<li><a href="http://localhost/bd-4w4/category/zen/" rel="category tag">Zen</a></li></ul>                    </div>
+                
+                    <div class="carte">
+
+                        <h4>Luang Prabang, Laos</h4>
+                        Luang Prabang, située au confluent des rivières Mékong et Nam Khan, est une ville paisible au charme intemporel, inscrite au patrimoine mondial de l'UNESCO. La ville est célèbre pour ses…                        <p> <a href="http://localhost/bd-4w4/luang-prabang-laos/">voir la suite</a></p>
+                        <ul class="post-categories">
+	<li><a href="http://localhost/bd-4w4/category/populaire/" rel="category tag">Populaire</a></li>
+	<li><a href="http://localhost/bd-4w4/category/repos/" rel="category tag">Repos</a></li></ul>                    </div>
+                
+                    <div class="carte">
+
+                        <h4>Parc national de Jiuzhaigou, Chine</h4>
+                        Niché dans les montagnes de la province du Sichuan, en Chine, le parc national de Jiuzhaigou est un véritable joyau naturel, célèbre pour ses paysages de conte de fées, ses…                        <p> <a href="http://localhost/bd-4w4/parc-national-de-jiuzhaigou-chine/">voir la suite</a></p>
+                        <ul class="post-categories">
+	<li><a href="http://localhost/bd-4w4/category/pleine-nature/" rel="category tag">Pleine nature</a></li>
+	<li><a href="http://localhost/bd-4w4/category/populaire/" rel="category tag">Populaire</a></li></ul>                    </div>
+                
+                    <div class="carte">
+
+                        <h4>Parc national de Torres del Paine, Chili</h4>
+                        Situé au sud du Chili, le parc national de Torres del Paine est réputé pour ses paysages époustouflants, ses montagnes majestueuses, ses glaciers imposants et ses lacs cristallins. Parcourez des…                        <p> <a href="http://localhost/bd-4w4/parc-national-de-torres-del-paine-chili/">voir la suite</a></p>
+                        <ul class="post-categories">
+	<li><a href="http://localhost/bd-4w4/category/pleine-nature/" rel="category tag">Pleine nature</a></li>
+	<li><a href="http://localhost/bd-4w4/category/populaire/" rel="category tag">Populaire</a></li></ul>                    </div>
+                
+                    <div class="carte">
+
+                        <h4>Ubud, Bali</h4>
+                        Ubud, situé au cœur de l'île indonésienne de Bali, est un véritable sanctuaire de tranquillité et de bien-être. Connue pour sa culture artistique florissante, sa nature luxuriante et ses pratiques…                        <p> <a href="http://localhost/bd-4w4/ubud-bali/">voir la suite</a></p>
+                        <ul class="post-categories">
+	<li><a href="http://localhost/bd-4w4/category/populaire/" rel="category tag">Populaire</a></li>
+	<li><a href="http://localhost/bd-4w4/category/zen/" rel="category tag">Zen</a></li></ul>                    </div>
+                                    </div>
     </section>
 </div>
 
 <div class="global clr-agencement-vert">
     <section class="section__ville">
-        <?php
-        $categories = get_categories();
-        // Boucle sur chaque catégorie
-        foreach ($categories as $category) { ?>
-        <?php
-            // Récupérer le lien vers la catégorie
-            $category_link = get_category_link($category->term_id);
-            // Récupérer le nombre d'articles dans la catégorie
-            $post_count = $category->count;
-            // Récupérer la description de la catégorie
-            $description = $category->description;
-            // Récupérer les 10 premiers mots de la description
-            $description_words = explode(' ', $description);
-            $short_description = implode(' ', array_slice($description_words, 0, 10));
-            // Afficher la carte de la catégorie
-            echo '<div class=" carte">';
-            echo '<h2><a href="' . esc_url($category_link) . '">' . $category->name . '</a></h2>';
-            echo '<p>' . $short_description . '...</p>';
-            echo '<a href="' . esc_url($category_link) . '">Voir plus</a>';
-            echo '<p>Nombre d\'articles : ' . $post_count . '</p>';
-            echo '</div>';
-        }
-        ?>
-        
+                <div class=" carte"><h2><a href="http://localhost/bd-4w4/category/aventure/">Aventure</a></h2><p>Partez à la découverte de destinations exaltantes et d'expériences uniques...</p><a href="http://localhost/bd-4w4/category/aventure/">Voir plus</a><p>Nombre d'articles : 9</p></div>        <div class=" carte"><h2><a href="http://localhost/bd-4w4/category/croisiere/">croisière</a></h2><p>La catégorie de voyage "croisière" offre une expérience de voyage...</p><a href="http://localhost/bd-4w4/category/croisiere/">Voir plus</a><p>Nombre d'articles : 10</p></div>        <div class=" carte"><h2><a href="http://localhost/bd-4w4/category/culturel/">Culturel</a></h2><p>Immergez-vous dans la richesse culturelle et historique de lieux fascinants...</p><a href="http://localhost/bd-4w4/category/culturel/">Voir plus</a><p>Nombre d'articles : 8</p></div>        <div class=" carte"><h2><a href="http://localhost/bd-4w4/category/pleine-nature/">Pleine nature</a></h2><p>Échappez à l'agitation urbaine et reconnectez-vous avec la nature sauvage...</p><a href="http://localhost/bd-4w4/category/pleine-nature/">Voir plus</a><p>Nombre d'articles : 12</p></div>        <div class=" carte"><h2><a href="http://localhost/bd-4w4/category/populaire/">Populaire</a></h2><p>Nos destinations les plus populaires en 2024
+...</p><a href="http://localhost/bd-4w4/category/populaire/">Voir plus</a><p>Nombre d'articles : 5</p></div>        <div class=" carte"><h2><a href="http://localhost/bd-4w4/category/repos/">Repos</a></h2><p>Offrez-vous une escapade relaxante dans des destinations tranquilles où le...</p><a href="http://localhost/bd-4w4/category/repos/">Voir plus</a><p>Nombre d'articles : 8</p></div>        <div class=" carte"><h2><a href="http://localhost/bd-4w4/category/sport/">Sport</a></h2><p>Entraînez-vous, défiez-vous et repoussez vos limites dans des destinations offrant...</p><a href="http://localhost/bd-4w4/category/sport/">Voir plus</a><p>Nombre d'articles : 13</p></div>        <div class=" carte"><h2><a href="http://localhost/bd-4w4/category/zen/">Zen</a></h2><p>Retrouvez l'harmonie intérieure et la paix de l'esprit dans des...</p><a href="http://localhost/bd-4w4/category/zen/">Voir plus</a><p>Nombre d'articles : 6</p></div>        
     </section>
 </div>
 
@@ -95,12 +119,28 @@
             sint dolorum sapiente odio recusandae! Sint, aspernatur modi illum voluptas a ullam aut quisquam tempora
             commodi.</h5>
     </section>
-    <?php get_template_part("gabarit/vague"); ?>
+    <div class="vague">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path class="remplissage" d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"></path>
+        </svg>
+    </div></div>
+
+
+<div id="footer" class="global">
+    <footer class="footer__section">
+        <h2>footer</h2>
+        <button>merci</button>
+
+          <nav class="menu-principal-container"><ul id="menu-principal-1" class="menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74"><a href="http://localhost/bd-4w4/category/aventure/">Aventure</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-75"><a href="http://localhost/bd-4w4/category/croisiere/">croisière</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-76"><a href="http://localhost/bd-4w4/category/culturel/">Culturel</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-77"><a href="http://localhost/bd-4w4/category/economique/">Économique</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-79"><a href="http://localhost/bd-4w4/category/pleine-nature/">Pleine nature</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80"><a href="http://localhost/bd-4w4/category/repos/">Repos</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-81"><a href="http://localhost/bd-4w4/category/sport/">Sport</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-82"><a href="http://localhost/bd-4w4/category/zen/">Zen</a></li>
+</ul></nav>    </footer>
 </div>
-
-
-<?php get_footer(); ?>
-
 </body>
 
 </html>
