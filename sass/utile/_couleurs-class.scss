@@ -30,27 +30,10 @@
     }
 }
 
-@mixin couleur-fond($clr, $bck) {
-    color: $clr;
-
-    @if(list.length($bck)==1) {
-        background-color: $bck;
-    }
-
-    @else {
-        background-image: linear-gradient(180deg, $bck);
-    }
-}
 
 // créer l'ensemble des règles de style d'agencement-couleur
 @each $valeur, $clr in $agencement-couleur {
     .clr-agencement-#{$valeur} {
         @include couleur-agencement($clr...);
-    }
-} 
-
-@each $valeur, $clr in $fond-couleur {
-    .fd-couleur-#{$valeur} {
-        @include couleur-fond($clr...);
     }
 } 

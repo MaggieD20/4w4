@@ -1,5 +1,3 @@
-
-
 // définition des variables de couleurs pour la palette de couleurs
 
 $--clr-bleu-pale : hsl(220, 100%, 85%);
@@ -8,23 +6,22 @@ $--clr-bleu-moyen : hsl(220, 100%, 30%);
 $--clr-bleu-fonce : hsl(220, 100%, 15%);
 
 
-$--clr-orange-pale: hsl(40, 100%, 85%);
-$--clr-orange-leger : hsl(40, 100%, 50%);
-$--clr-orange-moyen : hsl(40, 100%, 30%);
-$--clr-orange-fonce : hsl(40, 100%, 15%);
+$--clr-orange-pale: hsl(400, 100%, 0%);
+$--clr-orange-leger : hsl(450, 100%, 50%);
+$--clr-orange-moyen : hsl(480, 100%, 30%);
+$--clr-orange-fonce : hsl(490, 100%, 15%);
 
 $--clr-rouge-pale: hsl(10, 100%, 85%);
 $--clr-rouge-leger : hsl(10, 100%, 50%);
 $--clr-rouge-moyen : hsl(10, 100%, 30%);
 $--clr-rouge-fonce : hsl(10, 100%, 15%);
 
-$--clr-vert-pale: hsl(70, 100%, 85%);
-$--clr-vert-leger : hsl(70, 100%, 50%);
-$--clr-vert-moyen : hsl(70, 100%, 30%);
-$--clr-vert-fonce : hsl(70, 100%, 15%);
+$--clr-vert-pale: hsl(300,100%, 50%);
+$--clr-vert-leger : hsl(320, 100%, 50%);
+$--clr-vert-moyen : hsl(300, 100%, 30%);
+$--clr-vert-fonce : hsl(300, 100%, 15%);
 
-$--clr-jaune:--couleur-arriere-galerie;
-$--clr-rose:--couleur-arriere-accueil;
+
 
 // création du mapping des couleurs
 
@@ -45,8 +42,6 @@ $defaut: (
         200: $--clr-vert-leger,
         300: $--clr-vert-moyen,
         400: $--clr-vert-fonce ),
-        biclr: (rose:$--clr-rose,
-        jaune:$--clr-jaune)
 );
 
 
@@ -54,9 +49,8 @@ $defaut: (
 $agencement-couleur :(primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bleu-leger)),
     secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
     ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
-    vert: ($--clr-vert-fonce, $--clr-vert-pale));
-
-$fond-couleur : (biclr: ($--clr-rose, $--clr-jaune));
+    vert: ($--clr-vert-moyen,  ($--clr-vert-leger,$--clr-vert-pale)));
+   
 
 
 :root {

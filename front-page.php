@@ -35,7 +35,7 @@
     </section>
 </div>
 
-<div class="global fd-couleur-biclr">
+<div class="global clr-agencement-vert">
     <section class="section__ville">
         <?php
         $categories = get_categories();

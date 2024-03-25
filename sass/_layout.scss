@@ -60,3 +60,15 @@ body {
 }
 
 
+.carte ul{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.carte li{
+    text-align: center;
+    justify-content: space-around;
+}

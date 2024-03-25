@@ -89,35 +89,35 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .clr-secondaire-100 {
-  color: hsl(40, 100%, 85%);
+  color: hsl(40, 100%, 0%);
 }
 
 .bck-secondaire-100 {
-  background-color: hsl(40, 100%, 85%);
+  background-color: hsl(40, 100%, 0%);
 }
 
 .clr-secondaire-200 {
-  color: hsl(40, 100%, 50%);
+  color: hsl(90, 100%, 50%);
 }
 
 .bck-secondaire-200 {
-  background-color: hsl(40, 100%, 50%);
+  background-color: hsl(90, 100%, 50%);
 }
 
 .clr-secondaire-300 {
-  color: hsl(40, 100%, 30%);
+  color: hsl(120, 100%, 30%);
 }
 
 .bck-secondaire-300 {
-  background-color: hsl(40, 100%, 30%);
+  background-color: hsl(120, 100%, 30%);
 }
 
 .clr-secondaire-400 {
-  color: hsl(40, 100%, 15%);
+  color: hsl(130, 100%, 15%);
 }
 
 .bck-secondaire-400 {
-  background-color: hsl(40, 100%, 15%);
+  background-color: hsl(130, 100%, 15%);
 }
 
 .clr-ternaire-100 {
@@ -153,51 +153,35 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .clr-vert-100 {
-  color: hsl(70, 100%, 85%);
+  color: hsl(300, 100%, 50%);
 }
 
 .bck-vert-100 {
-  background-color: hsl(70, 100%, 85%);
+  background-color: hsl(300, 100%, 50%);
 }
 
 .clr-vert-200 {
-  color: hsl(70, 100%, 50%);
+  color: hsl(320, 100%, 50%);
 }
 
 .bck-vert-200 {
-  background-color: hsl(70, 100%, 50%);
+  background-color: hsl(320, 100%, 50%);
 }
 
 .clr-vert-300 {
-  color: hsl(70, 100%, 30%);
+  color: hsl(300, 100%, 30%);
 }
 
 .bck-vert-300 {
-  background-color: hsl(70, 100%, 30%);
+  background-color: hsl(300, 100%, 30%);
 }
 
 .clr-vert-400 {
-  color: hsl(70, 100%, 15%);
+  color: hsl(300, 100%, 15%);
 }
 
 .bck-vert-400 {
-  background-color: hsl(70, 100%, 15%);
-}
-
-.clr-biclr-rose {
-  color: --couleur-arriere-accueil;
-}
-
-.bck-biclr-rose {
-  background-color: --couleur-arriere-accueil;
-}
-
-.clr-biclr-jaune {
-  color: --couleur-arriere-galerie;
-}
-
-.bck-biclr-jaune {
-  background-color: --couleur-arriere-galerie;
+  background-color: hsl(300, 100%, 15%);
 }
 
 .clr-agencement-primaire {
@@ -206,8 +190,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .clr-agencement-secondaire {
-  color: hsl(40, 100%, 15%);
-  background-color: hsl(40, 100%, 85%);
+  color: hsl(130, 100%, 15%);
+  background-color: hsl(40, 100%, 0%);
 }
 
 .clr-agencement-ternaire {
@@ -216,13 +200,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .clr-agencement-vert {
-  color: hsl(70, 100%, 15%);
-  background-color: hsl(70, 100%, 85%);
-}
-
-.fd-couleur-biclr {
-  color: --couleur-arriere-accueil;
-  background-color: --couleur-arriere-galerie;
+  color: hsl(300, 100%, 30%);
+  background-image: linear-gradient(90deg, hsl(320, 100%, 50%), hsl(300, 100%, 50%));
 }
 
 /*************************règles de base********************************/
@@ -345,6 +324,17 @@ body {
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+}
+
+.carte ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carte li {
+  text-align: center;
+  justify-content: space-around;
 }
 
 .vague {
