@@ -11,6 +11,7 @@
 
                 </button>
             </form>
+            <?php wp_nav_menu(array("container" => "nav")); ?>
             <div class="sociaux">
                 <a href="#"><svg width="24" height="24" role="img" viewBox="0 0 24 24" fill="currentColor" color="#000"
                         xmlns="http://www.w3.org/2000/svg">
