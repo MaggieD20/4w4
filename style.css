@@ -396,15 +396,15 @@ body {
 
 /**********************Sections de la page*************************/
 .entete__header {
-  background-image: url("../images/avion-fond.jpg");
+  background-image: url("./images/avion-fond.jpg");
   background-repeat: no-repeat;
   background-size: 10rem;
-  background-position: 100% 50%;
+  background-position: 90% 50%;
 }
 
 @media (max-width: 720px) {
   .entete__header {
-    background-position: 50% 50%;
+    background-position: 50% 25%;
   }
 }
 .footer__section {
