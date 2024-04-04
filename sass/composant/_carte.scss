@@ -1,23 +1,7 @@
-// .section__ville{
-//     display: flex;
-//     flex-direction:row;
-//     gap: 2rem;
-// }
-
-// .carte{
-
-//     border: 5px solid black;
-//     display: flex;
-//     flex: 0 1 1100px/4;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     background-color: hsl(var(--hu2), 100%, 75%);
-// }
-
-
-
 .section__ville {
     display: flex;
+    justify-content: center;
+
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -30,7 +14,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    flex: 0 1 calc(800px/4);
+    flex: 0 1 calc(800px/3);
     background-color: hsl(var(--hu2), 100%, 80%);
 }
 
@@ -38,15 +22,10 @@
     align-items: center;
 }
 
-ul .post-categories{
-    background-color: black;
+.post-categories{
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start ;
-    align-self: center;
-}
-
-.post-categories li{
+    justify-content: flex-end;
     align-items: flex-start;
+    align-self: center;
 }
