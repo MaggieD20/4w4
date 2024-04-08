@@ -59,16 +59,8 @@ body {
     color: var(--couleur-footer);
 }
 
-
-.carte ul{
-
+.page_erreur{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-
-}
-
-.carte li{
-    text-align: center;
-    justify-content: space-around;
 }
