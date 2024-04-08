@@ -1,42 +1,19 @@
-// <div id="menu" class="global">
-//     <nav class="entete_menu">
-//     // générépar par wp_nav_menu()
-//         <div class="menu-principal-container">
-
-//             <ul id="menu-principal" class="menu">
-
-//             <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a href="http://localhost/bd-4w4/2020/10/07/582-6n3-stage-285h/">582-6N3 Stage (285h)</a></li>
-//         <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a href="http://localhost/bd-4w4/2020/10/07/582-5mbtechnologies-emergentes-et-avancees-volet-creation-60h/">Technologies émergentes et avancées – volet création</a></li>
-// <li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-36"><a href="http://localhost/bd-4w4/2020/10/07/582-5w5-projet-web-en-equipe-105h/">582-5W5	Projet Web en équipe (105h)</a></li>
-// <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-37"><a href="http://localhost/bd-4w4/2020/10/07/350-5n1-communication-et-dynamique-dune-equipe-de-travail-45h/">350-5N1 Communication et dynamique d’une équipe de travail (45h)</a></li>
-// <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-38"><a href="http://localhost/bd-4w4/2020/10/07/393-5e1-methodes-de-recherche-et-preparation-au-marche-du-travail-45h/">393-5E1 Méthodes de recherche et préparation au marché du travail (45h)</a></li>
-// <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-39"><a href="http://localhost/bd-4w4/2020/10/07/582-4mb-animation-3d-75h/">582-4MB Animation 3D (75h)</a></li>
-// <li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-40"><a href="http://localhost/bd-4w4/2020/10/07/582-4pa-interfaces-web-reactives-et-animees-cours-au-choix-75h/">582-4PA Interfaces Web réactives et animées – Cours au choix (75h)</a></li>
-// <li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-41"><a href="http://localhost/bd-4w4/2020/10/07/360-4j4-creation-de-jeu-en-equipe-105h/">582-4J4 Création de jeu en équipe (105h)</a></li>
-// <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-42"><a href="http://localhost/bd-4w4/2020/10/07/582-4w4-conception-dinterfaces-et-developpement-web/">582-4W4 Conception d’interfaces et développement Web (90h)</a></li>
-// <li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-43"><a href="http://localhost/bd-4w4/2020/10/07/582-4c2-gestion-de-projets-multimedias/">582-4C2 Gestion de projets multimédias (45h)</a></li>
-//     <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-44"><a href="http://localhost/bd-4w4/2020/10/07/582-3j3-creation-de-jeu-3d-75h/">582-3J3 Création de jeu 3D (75h)</a></li>
-//     <li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-45"><a href="http://localhost/bd-4w4/2020/10/07/582-3w3-creation-de-sites-web-dynamiques-90h/">582-3W3 Création de sites Web dynamiques (90h)</a></li>
-//     <li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-46"><a href="http://localhost/bd-4w4/2020/10/07/582-3c1-design-dinteractivite-75h/">582-3C1 Design d’interactivité (75h)</a></li>
-//     <li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-47"><a href="http://localhost/bd-4w4/2020/10/07/582-3m5imagerie-3d-75h/">582-3M5	Imagerie 3D (75h)</a></li>
-//     <li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-48"><a href="http://localhost/bd-4w4/2020/10/07/582-2j2creation-de-jeu-2d-60h/">582-2J2	Création de jeu 2D (60h)</a></li>
-//     <li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-49"><a href="http://localhost/bd-4w4/2020/10/07/582-2w2animation-et-interactivite-web-75h/">582-2W2	Animation et interactivité Web (75h)</a></li>
-//     <li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-50"><a href="http://localhost/bd-4w4/2020/10/07/582-2m4-conception-graphique-et-imagerie-vectorielle-90h/">582-2M4 Conception graphique et imagerie vectorielle (90h)</a></li>
-//     <li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-51"><a href="http://localhost/bd-4w4/2020/10/07/582-2m3-effets-speciaux-et-animation-60h/">582-2M3 Effets spéciaux et animation (60h)</a></li>
-//     <li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-52"><a href="http://localhost/bd-4w4/2020/10/07/582-1j1-animation-et-interactivite-en-jeu-75h/">582-1J1 Animation et interactivité en jeu (75h)</a></li>
-//     <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-53"><a href="http://localhost/bd-4w4/2020/10/07/582-1w1-mise-en-page-web-75h/">582-1W1 Mise en page Web (75h)</a></li>
-//     <li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-54"><a href="http://localhost/bd-4w4/2020/10/07/description-du-cours-582-1m2-conception-graphique-et-imagerie-matricielle/">582-1M2 Conception graphique et imagerie matricielle (90h)</a></li>
-//     <li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-55"><a href="http://localhost/bd-4w4/2020/10/07/description-du-cours-582-1m1-creation-video/">582-1M1 Création vidéo (75h)</a></li>
-//     <li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-56"><a href="http://localhost/bd-4w4/2020/10/07/description-du-cours-582-1m1-creation-video/">582-1M1 Création vidéo (75h)</a></li>
-//     </ul></div>        </nav>
-// </div>
-
+.menu_recherche{
+   
+    
+    @media screen and (min-width:720px) {
+        border: 5px solid black;
+        border-radius: 30%;
+        background-color: rgb(255, 255, 255);
+        
+    }
+}
 
 .menu-principal-container {
     // nav 
-    border: 1px solid black;
+    border: 1.5px solid black;
     border-radius: 15%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 0;
     left: 50px;
@@ -47,8 +24,8 @@
     @media screen and (min-width:720px) {
         position: static;
         transform: translateX(0);
-        border: 5px solid black;
         border-radius: 30%;
+       border: none;
         
     }
 }
@@ -74,11 +51,6 @@
     padding: 5px 15px;
 }
 
-.menu-item a {
-    // li a 
-
-}
-
 #chk_burger {
     display: none;
 }
@@ -94,7 +66,7 @@
     }
 }
 
-#chk_burger:checked~.menu-principal-container {
+#chk_burger:checked~.menu_recherche .menu-principal-container {
     transform: translateX(0%);
 }
 
@@ -105,6 +77,7 @@
     top: 5%;
     rotate: 20deg;
 }
+
 /************************MENU FOOTER*************************/
 
 footer .menu-principal-container {

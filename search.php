@@ -3,8 +3,6 @@
 ?>
 
 <?php get_header(); ?>
-<h2>search.php</h2>
-
 
 <div id="accueil" class="global">
     <section class="accueil__section">
@@ -31,7 +29,7 @@
 <div id="footer" class="global">
     <footer class="footer__section">
         <h2>footer</h2>
-        <button>merci</button>
+
     </footer>
 </div>
 </body>

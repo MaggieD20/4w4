@@ -44,8 +44,6 @@ $defaut: (
         400: $--clr-vert-fonce ),
 );
 
-
-
 $agencement-couleur :(primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bleu-leger)),
     secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
     ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
@@ -54,20 +52,6 @@ $agencement-couleur :(primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bl
 
 
 :root {
-
-    // --couleur-arriere-entete : #2600ff;
-    // --couleur-arriere-accueil: #b6f0ff;
-    // --couleur-arriere-galerie: #7ee5ff;
-    // --couleur-arriere-evenement: #ade5ff;
-    // --couleur-arriere-footer:#258300;
-    // --opacite: 0.7;
-    // --couleur-h2: #ffae00;
-
-    // --couleur-arriere-entete: hsl(230, 100%, 50%);
-    // --couleur-arriere-accueil: hsl(180, 100%, 85%);
-    // --couleur-arriere-galerie: hsl(190, 100%, 50%);
-    // --couleur-arriere-evenement: hsl(180, 100%, 70%);
-    // --couleur-arriere-footer: hsl(140, 100%, 30%);
 
     --nbr-element: 3;
     // 360/5 = 72
