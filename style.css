@@ -414,6 +414,11 @@ body {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 720px) {
+  .recherche {
+    padding: 0 0 5px 0;
+  }
+}
 
 .recherche__input {
   display: block;
@@ -537,8 +542,8 @@ body {
 #burger {
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 20px;
 }
 @media screen and (min-width: 720px) {
   #burger {
