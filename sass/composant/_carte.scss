@@ -16,13 +16,23 @@
     align-items: center;
     flex: 0 1 calc(800px/3);
     background-color: hsl(var(--hu2), 100%, 80%);
+
+    ul {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 0px;
+    }
 }
 
-.carte *{
+.carte * {
     align-items: center;
 }
 
-.post-categories{
+.post-categories {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;

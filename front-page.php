@@ -25,6 +25,7 @@
                     <div class="carte">
 
                         <h4><?php the_title() ?></h4>
+                       <?php the_post_thumbnail( 'thumbnail' );  ?>
                         <?php echo wp_trim_words(get_the_content(), 30); ?>
                         <p> <a href="<?php echo get_permalink() ?>">voir la suite</a></p>
                         <?php the_category() ?>
@@ -54,8 +55,11 @@
                 $description_words = explode(' ', $description);
                 $short_description = implode(' ', array_slice($description_words, 0, 10));
                 // Afficher la carte de la catégorie
+               
                 echo '<div class=" carte">';
-                echo '<h2><a href="' . esc_url($category_link) . '">' . $category->name . '</a></h2>';
+              
+                echo '<h2><a href="' . esc_url($category_link) . '">' . $category->name . '</a></h2>'; 
+
                 echo '<p>' . $short_description . '...</p>';
                 echo '<a href="' . esc_url($category_link) . '">Voir plus</a>';
                 echo '<p>Nombre d\'articles : ' . $post_count . '</p>';
