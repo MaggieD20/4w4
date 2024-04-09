@@ -1,9 +1,11 @@
 <?php
-// modele
+// page d'erreur
 ?>
 
+<!-- prendre le header -->
 <?php get_header(); ?>
 
+<!-- message  -->
 <div id="accueil" class="global">
     <section class="accueil__section">
         <h2>Accueil</h2>

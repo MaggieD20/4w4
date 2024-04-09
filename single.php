@@ -1,10 +1,8 @@
 <?php
-// modele
+// page single
 ?>
 
 <?php get_header(); ?>
-
-<h2>single.php</h2>
 
 <div id="accueil" class="global">
     <section class="accueil__section">

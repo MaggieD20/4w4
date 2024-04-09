@@ -1,14 +1,17 @@
 <?php
-// modele
+// page des catégories
 ?>
 
+<!-- prendre le header -->
 <?php get_header(); ?>
 
+<!-- zonne d'accueil -->
 <div id="accueil" class="global">
     <section class="accueil__section">
         <h2>Accueil(h2)</h2>
         <div class="section__ville">
 
+            <!-- faire apparaitre le catégorie -->
             <?php if (have_posts()) :
                 while (have_posts()) : the_post(); ?>
 
@@ -24,6 +27,7 @@
         </div>
     </section>
 </div>
+<!-- zonne de galerie -->
 <div id="galerie" class="global diagonal">
     <section class="galerie__section">
         <h2>galerie</h2>
@@ -31,6 +35,7 @@
         </h4>
     </section>
 </div>
+<!-- zone d'évenement -->
 <div id="evenement" class="global">
     <section class="evenement__section">
         <h2>Evenement</h2>
@@ -41,7 +46,7 @@
     <?php get_template_part("gabarit/vague"); ?>
 </div>
 
-
+<!-- prendre le footer -->
 <?php get_footer(); ?>
 
 </body>

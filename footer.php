@@ -1,3 +1,4 @@
+<!-- page du footer -->
 <div id="footer" class="global">
         <footer class="footer__section">
             <form class="recherche" action="">

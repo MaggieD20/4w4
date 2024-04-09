@@ -1,10 +1,11 @@
 <?php
-// modele
+// front-page
 ?>
 
+<!-- prendre le header -->
 <?php get_header(); ?>
 
-
+<!-- zone de haut de page -->
 <div id="entete" class="global">
     <section class="entete__header">
         <h1 class="bgc-texte"><?php echo get_bloginfo('name'); ?> </h1>
@@ -19,6 +20,7 @@
         <h2>Accueil</h2>
         <div class="section__ville">
 
+        <!-- afficher les voyages populaires -->
             <?php if (have_posts()) :
                 while (have_posts()) : the_post(); ?>
 
@@ -55,11 +57,8 @@
                 $description_words = explode(' ', $description);
                 $short_description = implode(' ', array_slice($description_words, 0, 10));
                 // Afficher la carte de la catégorie
-
                 echo '<div class=" carte">';
-
                 echo '<h2><a href="' . esc_url($category_link) . '">' . $category->name . '</a></h2>';
-
                 echo '<p>' . $short_description . '...</p>';
                 echo '<a href="' . esc_url($category_link) . '">Voir plus</a>';
                 echo '<p>Nombre d\'articles : ' . $post_count . '</p>';
