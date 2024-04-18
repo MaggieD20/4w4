@@ -17,11 +17,10 @@
                         <div class="image_recherche">
                             <?php if (has_post_thumbnail()) {
                                 the_post_thumbnail('thumbnail');
-                                set_post_thumbnail_size(150, 150);
-                            } else {
-                                the_post_thumbnail('images/agile.png');
-                            }
-                            ?></div>
+                            } else { ?>
+                                <img src="images/monde.jpg" alt="image de la carte du monde">
+                            <?php } ?>
+                        </div>
                         <div class="recherche_textes">
                             <h2><?php the_title(); ?></h2>
                             <p> <?php echo wp_trim_words(get_the_content(), 10); ?></p>

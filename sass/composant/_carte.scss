@@ -54,20 +54,17 @@
 
 .carte_recherche{
     display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
+     flex:  1 1 800px;
     gap: 1rem;
-align-items: center;
+    align-items: center;
 }
-
-
 
 .recherche_textes{
     display: flex;
     flex-direction: column;
-    
-
-}
+   
+    background-color: hsl(var(--hu2), 100%, 40%);
+    }
 
 @media (max-width: 720px) {
    .image_recherche{
