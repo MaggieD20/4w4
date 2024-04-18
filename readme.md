@@ -1,5 +1,5 @@
 
-# TP1 - création de la page recherche d'un club de voyage
+# examen intra - création de la page recherche d'un club de voyage
 
 # Marguerite Demontigny
 # groupe 2

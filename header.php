@@ -28,7 +28,6 @@
             </div>
             <div class="menu_recherche">
                 <?php wp_nav_menu(array("menu" => "principal", "container" => "nav")); ?>
-
             </div>
         </header>
     </div>

@@ -504,6 +504,7 @@ body {
 .recherche_textes {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   background-color: hsl(var(--hu2), 100%, 40%);
 }
 

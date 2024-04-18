@@ -62,12 +62,12 @@
 .recherche_textes{
     display: flex;
     flex-direction: column;
-   
+    flex-grow: 1;   
     background-color: hsl(var(--hu2), 100%, 40%);
-    }
+}
 
 @media (max-width: 720px) {
    .image_recherche{
     display: none;
-} 
+    } 
 }
