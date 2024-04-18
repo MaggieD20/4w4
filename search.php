@@ -17,6 +17,7 @@
                         <div class="image_recherche">
                             <?php if (has_post_thumbnail()) {
                                 the_post_thumbnail('thumbnail');
+                                set_post_thumbnail_size(150, 150);
                             } else {
                                 the_post_thumbnail('images/agile.png');
                             }
@@ -49,12 +50,7 @@
     <?php get_template_part("gabarit/vague"); ?>
 </div>
 <!-- ---------footer---------- -->
-<div id="footer" class="global">
-    <footer class="footer__section">
-        <h2>footer</h2>
-
-    </footer>
-</div>
+<?php get_footer(); ?>
 </body>
 
 </html>

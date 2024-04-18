@@ -401,6 +401,11 @@ body {
     background-position: 50% 25%;
   }
 }
+.barre_recherche {
+  display: flex;
+  justify-content: end;
+}
+
 .footer__section {
   display: flex;
   flex-direction: column;

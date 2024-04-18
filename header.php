@@ -23,7 +23,9 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg></label>
             <input id="chk_burger" type="checkbox">
-            <?php get_search_form(); ?>
+            <div class="barre_recherche">
+                <?php get_search_form(); ?>
+            </div>
             <div class="menu_recherche">
                 <?php wp_nav_menu(array("menu" => "principal", "container" => "nav")); ?>
 
