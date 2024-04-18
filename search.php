@@ -31,12 +31,8 @@
     </section>
 </div>
 <!-- ---------footer---------- -->
-<div id="footer" class="global">
-    <footer class="footer__section">
-        <h2>footer</h2>
 
-    </footer>
-</div>
+<?php get_footer(); ?>
 </body>
 
 </html>
