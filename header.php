@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Darumadrop+One&family=Single+Day&display=swap" rel="stylesheet">
-
+    <?php wp_head() ?>
 </head>
 
 <body>
@@ -23,9 +23,9 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg></label>
             <input id="chk_burger" type="checkbox">
-            <div class= "menu_recherche">
-            <?php wp_nav_menu(array("menu"=>"principal","container" => "nav")); ?>
-            <?php get_search_form(); ?>
+            <div class="menu_recherche">
+                <?php wp_nav_menu(array("menu" => "principal", "container" => "nav")); ?>
+                <?php get_search_form(); ?>
             </div>
         </header>
     </div>
