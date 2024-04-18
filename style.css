@@ -489,6 +489,18 @@ body {
   justify-content: space-around;
 }
 
+.carte_recherche {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  gap: 1rem;
+}
+
+.recherche_textes {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 720px) {
   .menu_recherche {
     border: 5px solid black;

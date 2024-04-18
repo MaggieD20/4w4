@@ -13,10 +13,17 @@
                 while (have_posts()) : the_post(); ?>
 
 
-                    <div class="carte">
-
-                       <h2><?php the_title(); ?></h2> 
-                       <p> <?php echo wp_trim_words(get_the_content(), 10); ?></p>
+                    <div class="carte_recherche">
+                        <?php if (has_post_thumbnail()) {
+                            the_post_thumbnail('medium');
+                        } else {
+                        }
+                        ?>
+                        <div class="recherche_textes">
+                            <h2><?php the_title(); ?></h2>
+                            <p> <?php echo wp_trim_words(get_the_content(), 10); ?></p>
+                            <p> <a href="<?php echo get_permalink() ?>">Suite...</a></p>
+                        </div>
                     </div>
                 <?php endwhile; ?>
             <?php endif;  ?>
