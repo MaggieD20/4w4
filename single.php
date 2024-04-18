@@ -12,7 +12,7 @@
                 while (have_posts()) : the_post(); ?>
 
                     <div class="carte">
-                        <?php the_post_thumbnail('medium')?>
+                        <?php the_post_thumbnail('medium') ?>
                         <h4><?php the_title() ?></h4>
                         <?php the_content(); ?>
 

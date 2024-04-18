@@ -60,9 +60,17 @@
 align-items: center;
 }
 
+
+
 .recherche_textes{
     display: flex;
     flex-direction: column;
     
 
+}
+
+@media (max-width: 720px) {
+   .image_recherche{
+    display: none;
+} 
 }

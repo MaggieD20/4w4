@@ -502,6 +502,11 @@ body {
   flex-direction: column;
 }
 
+@media (max-width: 720px) {
+  .image_recherche {
+    display: none;
+  }
+}
 @media screen and (min-width: 720px) {
   .menu_recherche {
     border: 5px solid black;
