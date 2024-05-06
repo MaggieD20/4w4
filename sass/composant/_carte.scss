@@ -28,6 +28,12 @@
     }
 }
 
+.single{
+    .carte{
+        flex: unset;
+    }
+}
+
 .carte * {
     align-items: center;
 }
@@ -54,7 +60,7 @@
 
 .carte_recherche{
     display: flex;
-     flex:  1 1 800px;
+    flex:  1 1 800px;
     gap: 1rem;
     align-items: center;
 }

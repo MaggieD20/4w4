@@ -7,7 +7,7 @@
 <div id="accueil" class="global">
     <section class="accueil__section">
         <h2>Accueil(h2)</h2>
-        <div class="section__ville">
+        <div class="section__ville single">
             <?php if (have_posts()) :
                 while (have_posts()) : the_post(); ?>
 
@@ -15,6 +15,10 @@
                         <?php the_post_thumbnail('medium') ?>
                         <h4><?php the_title() ?></h4>
                         <?php the_content(); ?>
+                        <p>température minimum: <?php the_field("temperature_minimum"); ?></p>
+                        <p>température maximum: <?php the_field("temperature_maximum"); ?></p>
+                        <p>niveau d'humidité: <?php the_field("humidite"); ?></p>
+                        <p>villes avoisinantes: <?php the_field("villes_avoisinantes"); ?></p>
 
                     </div>
                 <?php endwhile; ?>
