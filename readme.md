@@ -5,7 +5,7 @@
 # groupe 2
 
 ### desrciption
-modification de la page de recherche et l'ajout d'images
+Finaliser le site de voyage
 
 
 ### ma github page

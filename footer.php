@@ -10,7 +10,9 @@
 
             </button>
         </form>
-
+        <h6><b>Marguerite Demontigny</b></h6>
+        <a href="https://github.com/MaggieD20/4w4/tree/tp2">Lien Github</a>
+        <a href="https://maggied20.github.io/4w4/">Page Git</a>
         <div class="sociaux">
             <a href="#"><svg width="24" height="24" role="img" viewBox="0 0 24 24" fill="currentColor" color="#000" xmlns="http://www.w3.org/2000/svg">
                     <title>Facebook icon</title>
