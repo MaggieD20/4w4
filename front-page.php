@@ -17,21 +17,19 @@
 </div>
 <div id="accueil" class="global">
     <section class="accueil__section">
-        <h2>Accueil</h2>
+        <h2>Destinations populaires</h2>
         <div class="section__ville">
 
-        <!-- afficher les voyages populaires -->
+            <!-- afficher les voyages populaires -->
             <?php if (have_posts()) :
-                while (have_posts()) : the_post(); ?>
+                while (have_posts()) : the_post();
+                    $ma_categorie = "carte";
+                    if (in_category('galerie')) {
+                        $ma_categorie = "galerie";
+                        get_template_part('gabarit/categorie', $ma_categorie);
+                    }
+            ?>
 
-                    <div class="carte">
-                        <?php the_post_thumbnail('thumbnail');  ?>
-                        <h4><?php the_title() ?></h4>
-
-                        <?php echo wp_trim_words(get_the_content(), 30); ?>
-                        <p> <a href="<?php echo get_permalink() ?>">voir la suite</a></p>
-                        <?php the_category() ?>
-                    </div>
                 <?php endwhile; ?>
             <?php endif;  ?>
         </div>
@@ -45,8 +43,7 @@
             <?php
             $categories = get_categories();
             // Boucle sur chaque catégorie
-            foreach ($categories as $category) { ?>
-            <?php
+            foreach ($categories as $category) {
                 // Récupérer le lien vers la catégorie
                 $category_link = get_category_link($category->term_id);
                 // Récupérer le nombre d'articles dans la catégorie
@@ -75,6 +72,7 @@
         <h2>galerie</h2>
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio corrupti tempora dolores
         </h4>
+        <?php echo do_shortcode("[em_destination]"); ?>
     </section>
 </div>
 <div id="evenement" class="global">
