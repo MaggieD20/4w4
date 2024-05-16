@@ -1,4 +1,5 @@
   <?php
+    //   gabarit pour afficher des cartes de catégories
     $categories = get_categories();
     // Boucle sur chaque catégorie
     foreach ($categories as $category) {
