@@ -1,17 +1,19 @@
 .menu_recherche{
        
     @media screen and (min-width:720px) {
-        // border: 5px solid black;
-        // border-radius: 30%;
+        border: 2px solid var(--couleur-arriere-footer);
+        border-radius: 5px;
         background-color: hsl(var(--hu2), 100%, 80%);
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 .menu-principal-container {
     // nav 
-    // border: 1.5px solid black;
-    // border-radius: 15%;
+     border: 1.5px solid black;
+    border-radius: 5%;
     // background-color: rgb(255, 255, 255);
     position: absolute;
     top: 0;

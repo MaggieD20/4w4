@@ -25,10 +25,12 @@
             <input id="chk_burger" type="checkbox">
             <div class="menu_recherche">
                 <?php wp_nav_menu(array("menu" => "principal", "container" => "nav")); ?>
+                <div class="barre_recherche">
+                    <?php get_search_form(); ?>
+                </div>
             </div>
-            <div class="barre_recherche">
-                <?php get_search_form(); ?>
-            </div>
+
+
 
         </header>
     </div>
