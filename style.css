@@ -517,18 +517,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 720px) {
-  .menu_recherche {
-    border: 5px solid black;
-    border-radius: 30%;
-    background-color: rgb(255, 255, 255);
-  }
-}
-
 .menu-principal-container {
-  border: 1.5px solid black;
-  border-radius: 15%;
-  background-color: rgb(255, 255, 255);
   position: absolute;
   top: 0;
   left: 50px;
