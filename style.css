@@ -529,8 +529,9 @@ body {
 }
 
 .menu-principal-container {
-  border: 1.5px solid black;
-  border-radius: 5%;
+  border: 1.5px solid var(--couleur-arriere-footer);
+  border-radius: 10px;
+  background-color: hsl(var(--hu2), 100%, 80%);
   position: absolute;
   top: 0;
   left: 50px;
@@ -552,17 +553,20 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   list-style-type: none;
+  margin: 0;
+  padding: 20px;
 }
 @media screen and (min-width: 720px) {
   #menu-principal {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
   }
 }
 
 .menu-item {
-  padding: 5px 15px;
+  padding: 5px;
 }
 
 #chk_burger {
