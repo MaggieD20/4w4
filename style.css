@@ -153,27 +153,27 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .clr-vert-100 {
-  color: hsl(300, 100%, 50%);
+  color: var(--couleur-arriere-galerie);
 }
 
 .bck-vert-100 {
-  background-color: hsl(300, 100%, 50%);
+  background-color: var(--couleur-arriere-galerie);
 }
 
 .clr-vert-200 {
-  color: hsl(320, 100%, 50%);
+  color: var(--couleur-arriere-entete);
 }
 
 .bck-vert-200 {
-  background-color: hsl(320, 100%, 50%);
+  background-color: var(--couleur-arriere-entete);
 }
 
 .clr-vert-300 {
-  color: hsl(300, 100%, 30%);
+  color: hsl(245, 100%, 50%);
 }
 
 .bck-vert-300 {
-  background-color: hsl(300, 100%, 30%);
+  background-color: hsl(245, 100%, 50%);
 }
 
 .clr-vert-400 {
@@ -200,8 +200,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .clr-agencement-vert {
-  color: hsl(300, 100%, 30%);
-  background-image: linear-gradient(90deg, hsl(320, 100%, 50%), hsl(300, 100%, 50%));
+  color: hsl(245, 100%, 50%);
+  background-image: linear-gradient(90deg, var(--couleur-arriere-entete), var(--couleur-arriere-galerie));
 }
 
 /*************************règles de base********************************/
@@ -408,10 +408,19 @@ body {
 
 .footer__section {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   gap: 2rem;
+}
+
+.info_auteure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h6 {
+  margin: 1rem 0;
 }
 
 /***********************Les composants**************************/
@@ -436,7 +445,7 @@ body {
 .sociaux {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .sociaux svg {

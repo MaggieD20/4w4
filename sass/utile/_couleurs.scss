@@ -16,9 +16,9 @@ $--clr-rouge-leger : hsl(10, 100%, 50%);
 $--clr-rouge-moyen : hsl(10, 100%, 30%);
 $--clr-rouge-fonce : hsl(10, 100%, 15%);
 
-$--clr-vert-pale: hsl(300,100%, 50%);
-$--clr-vert-leger : hsl(320, 100%, 50%);
-$--clr-vert-moyen : hsl(300, 100%, 30%);
+$--clr-vert-pale: var(--couleur-arriere-galerie);
+$--clr-vert-leger : var(--couleur-arriere-entete);
+$--clr-vert-moyen : hsl(245, 100%, 50%);
 $--clr-vert-fonce : hsl(300, 100%, 15%);
 
 
