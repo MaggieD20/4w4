@@ -409,7 +409,15 @@ body {
 .footer__section {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 2rem;
+}
+@media screen and (min-width: 720px) {
+  .footer__section {
+    flex-direction: row;
+    align-items: start;
+  }
 }
 
 .info_auteure {
@@ -417,6 +425,20 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.info_projet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 720px) {
+  .info_projet {
+    padding: 0 5px 0 10px;
+    border-left: 1px solid var(--couleur-arriere-evenement);
+    border-right: 1px solid var(--couleur-arriere-evenement);
+  }
 }
 
 footer h6 {

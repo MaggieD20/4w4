@@ -1,17 +1,36 @@
-.footer__section{
+.footer__section {
     display: flex;
     justify-content: center;
-   
+    align-items: center;
+    flex-direction: column;
     gap: 2rem;
+
+    @media screen and (min-width:720px) {
+        flex-direction: row;
+        align-items: start;
+    }
 }
 
-.info_auteure{
+.info_auteure {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-footer h6{
+.info_projet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width:720px) {
+        padding: 0 5px 0 10px;
+        border-left: 1px solid var(--couleur-arriere-evenement);
+        border-right: 1px solid var(--couleur-arriere-evenement);
+    }
+}
+
+footer h6 {
     margin: 1rem 0;
 }
