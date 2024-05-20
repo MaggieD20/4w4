@@ -55,7 +55,7 @@ $agencement-couleur :(primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bl
 
     --nbr-element: 3;
     // 360/5 = 72
-    --increment-angle: calc(360/var(--nbr-element));
+    --increment-angle: 10;
     --angle-initial: 180;
     --hu1: var(--angle-initial);
     --hu2: calc(var(--hu1) + var(--increment-angle));

@@ -19,7 +19,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*************************variables css********************************/
 :root {
   --nbr-element: 3;
-  --increment-angle: calc(360/var(--nbr-element));
+  --increment-angle: 10;
   --angle-initial: 180;
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--increment-angle));
@@ -517,6 +517,12 @@ body {
     display: none;
   }
 }
+@media screen and (min-width: 720px) {
+  .menu_recherche {
+    background-color: hsl(var(--hu2), 100%, 80%);
+  }
+}
+
 .menu-principal-container {
   position: absolute;
   top: 0;
