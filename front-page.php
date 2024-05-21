@@ -11,6 +11,7 @@
         <h1 class="bgc-texte"><?php echo get_bloginfo('name'); ?> </h1>
         <h2 class="bgc-texte"><?php echo get_bloginfo('description'); ?></h2>
         <h3 class="bgc-texte">TIM collège de Maisonneuve</h3>
+        <?php get_template_part("gabarit/logo-sociaux"); ?>
         <button class="entete__button">Évenements</button>
     </section>
     <?php get_template_part("gabarit/vague"); ?>
@@ -49,6 +50,7 @@
 <div id=" galerie" class="global diagonal">
     <section class="galerie__section">
         <h2>galerie</h2>
+        <?php get_template_part("gabarit/logo-sociaux"); ?>
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio corrupti tempora dolores
         </h4>
         <?php echo do_shortcode("[em_destination]"); ?>

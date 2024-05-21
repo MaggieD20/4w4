@@ -405,6 +405,11 @@ body {
   background-position: 90% 50%;
 }
 
+.entete__header .sociaux {
+  justify-content: flex-start;
+  padding-bottom: 2rem;
+}
+
 @media (max-width: 720px) {
   .entete__header {
     background-position: 50% 25%;
@@ -480,7 +485,7 @@ footer h6 {
 }
 
 .sociaux svg {
-  fill: var(--couleur-arriere-entete);
+  fill: var(--couleur-arriere-galerie);
 }
 
 .section__ville {
