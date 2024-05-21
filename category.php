@@ -8,7 +8,7 @@
 <!-- zonne d'accueil -->
 <div id="accueil" class="global">
     <section class="accueil__section">
-        <h2>Accueil(h2)</h2>
+        <h2>Accueil</h2>
         <div class="section__ville">
 
             <!-- faire apparaitre le catégorie -->
