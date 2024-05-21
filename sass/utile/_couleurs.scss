@@ -47,8 +47,8 @@ $defaut: (
 $agencement-couleur :(primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bleu-leger)),
     secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
     ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
-    vert: ($--clr-vert-moyen,  ($--clr-vert-leger,$--clr-vert-pale)));
-   
+    vert: ($--clr-vert-moyen, ($--clr-vert-leger, $--clr-vert-pale)));
+
 
 
 :root {
@@ -87,7 +87,7 @@ $agencement-couleur :(primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bl
     --couleur-bouton-border: hsl(var(--hu1), 90%, 20%);
 
     --couleur-lien: hsl(var(--hu2), var(--s-arriere), 15%);
-    --couleur-lien-hover: hsl(var(--hu1), var(--s-arriere), 80%);
+    --couleur-lien-hover: hsl(var(--hu5), var(--s-arriere), 30%);
     --couleur-lien-focus: hsl(var(--hu1), var(--s-arriere), 40%);
     --couleur-lien-visited: hsl(var(--hu1), var(--s-arriere), 10%);
 
