@@ -18,7 +18,9 @@
                             <?php if (has_post_thumbnail()) {
                                 the_post_thumbnail('thumbnail');
                             } else { ?>
-                                <img src="images/monde.jpg" alt="image de la carte du monde">
+                                <?php $image_id = 427;
+                                $image_url = wp_get_attachment_image_url($image_id, 'full') ?>
+                                <img src="<?= $image_url ?>" alt="image de la carte du monde">
                             <?php } ?>
                         </div>
                         <div class="recherche_textes">

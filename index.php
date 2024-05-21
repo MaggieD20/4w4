@@ -6,17 +6,17 @@
 
 <div id="accueil" class="global">
     <section class="accueil__section">
-        <h2>Accueil</h2>
+        <h2>Accueil1</h2>
         <div class="flexbox">
 
             <?php if (have_posts()) :
                 while (have_posts()) : the_post(); ?>
-                
+
                     ?>
                     <div class="carte">
                         <?php
                         the_title();
-                        echo wp_trim_words(get_the_content(), 10); ?>              
+                        echo wp_trim_words(get_the_content(), 10); ?>
                     </div>
                 <?php endwhile; ?>
             <?php endif;  ?>
