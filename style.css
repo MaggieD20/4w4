@@ -488,6 +488,10 @@ footer h6 {
   fill: var(--couleur-arriere-galerie);
 }
 
+.sociaux svg:hover {
+  fill: var(--couleur-footer);
+}
+
 .section__ville {
   display: flex;
   justify-content: center;

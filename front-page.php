@@ -12,7 +12,7 @@
         <h2 class="bgc-texte"><?php echo get_bloginfo('description'); ?></h2>
         <h3 class="bgc-texte">TIM collège de Maisonneuve</h3>
         <?php get_template_part("gabarit/logo-sociaux"); ?>
-        <button class="entete__button">Évenements</button>
+        <button onclick="window.location.href = '#evenement';" class=" entete__button">Évenements</button>
     </section>
     <?php get_template_part("gabarit/vague"); ?>
 </div>
@@ -58,10 +58,8 @@
 </div>
 <div id="evenement" class="global">
     <section class="evenement__section">
-        <h2>Evenement</h2>
-        <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quo beatae necessitatibus porro vel
-            sint dolorum sapiente odio recusandae! Sint, aspernatur modi illum voluptas a ullam aut quisquam tempora
-            commodi.</h5>
+        <h2>Evenement du mois</h2>
+        <h5>Ce mois-ci venez assister aux festivaux de nourritures du monde</h5>
     </section>
     <?php get_template_part("gabarit/vague"); ?>
 </div>
