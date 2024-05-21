@@ -482,7 +482,8 @@ footer h6 {
 }
 
 .carte {
-  border: 5px solid black;
+  border: 5px solid #0d59f2;
+  border-radius: 5px;
   display: flex;
   text-align: center;
   flex-grow: 1;
@@ -491,6 +492,8 @@ footer h6 {
   align-items: center;
   flex: 0 1 266.6666666667px;
   background-color: hsl(var(--hu2), 100%, 80%);
+  -webkit-box-shadow: -5px 5px 5px 1px #A8A8A8;
+  box-shadow: -5px 5px 5px 1px rgba(95, 95, 95, 0.3843137255);
 }
 .carte ul {
   flex-wrap: wrap;
