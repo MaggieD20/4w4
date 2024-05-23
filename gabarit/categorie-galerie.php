@@ -4,5 +4,4 @@
 
 <div class="galerie">
     <?php the_content(); ?>
-
 </div>

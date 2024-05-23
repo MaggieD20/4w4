@@ -9,7 +9,8 @@
             <a href="https://maggied20.github.io/4w4/">Page Git</a>
         </div>
         <div class="info_projet">
-            <h6>Collège de Maisonneuve</h6>
+            <h6><a href="https://www.cmaisonneuve.qc.ca/">Collège de Maisonneuve</a></h6>
+            <h6>Addresse: 3800 R. Sherbrooke E, Montréal, QC H1X 2A2</h6>
             <h6>Site de voyage créé dans le cadre du cours de 4w4</h6>
         </div>
         <div class="liens_recherches_footer">
@@ -25,6 +26,11 @@
             <div class="liens">
                 <?php wp_nav_menu(array("menu" => "piedpage", "container" => "nav")); ?>
             </div>
+        </div>
+        <div class="image_footer">
+            <?php $image_id = 443;
+            $image_url = wp_get_attachment_image_url($image_id, 'full') ?>
+            <img class="img_footer" src="<?= $image_url ?>" alt="image de la carte du monde">
         </div>
 
     </footer>
