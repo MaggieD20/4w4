@@ -1,0 +1,101 @@
+// définition des variables de couleurs pour la palette de couleurs
+
+$--clr-bleu-pale : hsl(220, 100%, 85%);
+$--clr-bleu-leger : hsl(220, 100%, 60%);
+$--clr-bleu-moyen : hsl(220, 100%, 30%);
+$--clr-bleu-fonce : hsl(220, 100%, 15%);
+
+
+$--clr-orange-pale: hsl(400, 100%, 0%);
+$--clr-orange-leger : hsl(450, 100%, 50%);
+$--clr-orange-moyen : hsl(480, 100%, 30%);
+$--clr-orange-fonce : hsl(490, 100%, 15%);
+
+$--clr-rouge-pale: hsl(10, 100%, 85%);
+$--clr-rouge-leger : hsl(10, 100%, 50%);
+$--clr-rouge-moyen : hsl(10, 100%, 30%);
+$--clr-rouge-fonce : hsl(10, 100%, 15%);
+
+$--clr-vert-pale: var(--couleur-arriere-galerie);
+$--clr-vert-leger : var(--couleur-arriere-entete);
+$--clr-vert-moyen : hsl(245, 100%, 50%);
+$--clr-vert-fonce : hsl(300, 100%, 15%);
+
+
+
+// création du mapping des couleurs
+
+$defaut: (
+    primaire : (100: $--clr-bleu-pale,
+        200: $--clr-bleu-leger,
+        300: $--clr-bleu-moyen,
+        400: $--clr-bleu-fonce ),
+    secondaire : (100: $--clr-orange-pale,
+        200: $--clr-orange-leger,
+        300: $--clr-orange-moyen,
+        400: $--clr-orange-fonce ),
+    ternaire : (100: $--clr-rouge-pale,
+        200: $--clr-rouge-leger,
+        300: $--clr-rouge-moyen,
+        400: $--clr-rouge-fonce ),
+    vert : (100: $--clr-vert-pale,
+        200: $--clr-vert-leger,
+        300: $--clr-vert-moyen,
+        400: $--clr-vert-fonce ),
+);
+
+$agencement-couleur :(primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bleu-leger)),
+    secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
+    ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
+    vert: ($--clr-vert-moyen, ($--clr-vert-leger, $--clr-vert-pale)));
+
+
+
+:root {
+
+    --nbr-element: 3;
+    // 360/5 = 72
+    --increment-angle: 10;
+    --angle-initial: 180;
+    --hu1: var(--angle-initial);
+    --hu2: calc(var(--hu1) + var(--increment-angle));
+    --hu3: calc(var(--hu2) + var(--increment-angle));
+    --hu4: calc(var(--hu3) + var(--increment-angle));
+    --hu5: calc(var(--hu4) + var(--increment-angle));
+
+    --s-arriere: 90%;
+    --l-arriere: 50%; //je n'utilise pas les variables de saturation car j'aime les cours que j'ai
+    --s-couleur: 100%;
+    --l-couleur: 25%;
+
+
+    --couleur-arriere-entete: hsl(var(--hu1), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-accueil: hsl(var(--hu2), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-galerie: hsl(var(--hu3), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-evenement: hsl(var(--hu4), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-footer: hsl(var(--hu5), var(--s-arriere), var(--l-arriere));
+    --opacite: 0.7;
+    --couleur-h2: #ffae00;
+
+    --couleur-entete: hsl(var(--hu1), var(--s-arriere), var(--l-couleur));
+    --couleur-accueil: hsl(var(--hu2), var(--s-arriere), var(--l-couleur));
+    --couleur-galerie: hsl(var(--hu3), var(--s-arriere), var(--l-couleur));
+    --couleur-evenement: hsl(var(--hu4), var(--s-arriere), var(--l-couleur));
+    --couleur-footer: hsl(var(--hu5), var(--s-arriere), var(--l-couleur));
+
+    --couleur-bouton: hsl(var(--hu1), var(--s-arriere), 60%);
+    --couleur-bouton-border: hsl(var(--hu1), 90%, 20%);
+
+    --couleur-lien: hsl(var(--hu2), var(--s-arriere), 15%);
+    --couleur-lien-hover: hsl(var(--hu5), var(--s-arriere), 30%);
+    --couleur-lien-focus: hsl(var(--hu1), var(--s-arriere), 40%);
+    --couleur-lien-visited: hsl(var(--hu1), var(--s-arriere), 10%);
+
+    #entete {
+        --_couleur-arriere-vague: hsl(var(--hu2), var(--s-arriere), 50%);
+    }
+
+    #evenement {
+        --_couleur-arriere-vague: hsl(var(--hu5), var(--s-arriere), 50%);
+    }
+}

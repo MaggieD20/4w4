@@ -1,0 +1,15 @@
+.recherche {
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width:720px) {
+        padding: 0 0 5px 0;
+    }
+}
+
+.recherche__input {
+    display: block;
+}
+
+.recherche__button {
+    background-color: var(--couleur-arriere-galerie);
+}

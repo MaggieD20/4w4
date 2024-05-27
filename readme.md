@@ -1,14 +1,14 @@
-# laboratoire #1 
-## Introduction à sass et revision html/css
-###  concevoir une page de plusieurs sections qui contient éléments:
--dossier sass
--normalize.css
--styles.css
 
-À réaliser pour :
--compléter chacune des règles de styles des éléments H
--changer les couleurs de background et couleur des H
--améliorer les design général sans être trop spécifique
--Ajouter deux variables
--créer plusieur commit
--une github-page
+# examen intra - création de la page recherche d'un club de voyage
+
+# Marguerite Demontigny
+# groupe 2
+
+### description
+Finaliser le site de voyage
+
+
+### ma github page
+https://maggied20.github.io/4w4/
+
+https://gftnth00.mywhc.ca/tim37/
