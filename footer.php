@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="image_footer">
-            <?php $image_id = 443;
+            <?php $image_id = 252;
             $image_url = wp_get_attachment_image_url($image_id, 'full') ?>
             <img class="img_footer" src="<?= $image_url ?>" alt="image de la carte du monde">
         </div>

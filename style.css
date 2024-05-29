@@ -470,9 +470,9 @@ footer h6 {
   margin: 1rem 0;
 }
 
-.image_footer {
-  width: 20%;
-  height: 20%;
+.img_footer {
+  width: 100%;
+  height: 70%;
 }
 
 /***********************Les composants**************************/
@@ -528,6 +528,7 @@ footer h6 {
   background-color: hsl(var(--hu2), 100%, 80%);
   -webkit-box-shadow: -5px 5px 5px 1px #A8A8A8;
   box-shadow: -5px 5px 5px 1px rgba(95, 95, 95, 0.3843137255);
+  transition: background-color 0.5s;
 }
 .carte ul {
   flex-wrap: wrap;
@@ -537,6 +538,10 @@ footer h6 {
   flex-direction: row;
   gap: 2rem;
   padding: 0px;
+}
+
+.carte:hover {
+  background-color: rgba(77, 255, 0, 0.266);
 }
 
 .single .carte {

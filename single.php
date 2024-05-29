@@ -18,7 +18,7 @@
                         <p>température minimum: <?php the_field("temperature_minimum"); ?></p>
                         <p>température maximum: <?php the_field("temperature_maximum"); ?></p>
                         <p>niveau d'humidité: <?php the_field("humidite"); ?></p>
-                        <p>villes avoisinantes: <?php the_field("villes_avoisinantes"); ?></p>
+                        <p>ville avoisinante: <?php the_field("ville_avoisinante"); ?></p>
 
                     </div>
                 <?php endwhile; ?>
