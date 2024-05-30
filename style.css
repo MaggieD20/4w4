@@ -294,7 +294,7 @@ button.entete__button:active {
 body {
   display: flex;
   flex-direction: column;
-  font-family: "single Day", Arial;
+  font-family: "Caveat", Arial;
 }
 
 .global {
@@ -310,7 +310,8 @@ body {
   padding: 5rem 1rem;
 }
 
-.entete__header, .entete__menu {
+.entete__header,
+.entete__menu {
   flex: 0 1 1500px;
   position: relative;
   padding: 0;
