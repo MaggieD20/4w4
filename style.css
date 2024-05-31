@@ -56,10 +56,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --_couleur-arriere-vague: hsl(var(--hu5), var(--s-arriere), 50%);
 }
 :root .intro__pays {
-  --_couleur-arriere-vague: hsl(var(--hu5), var(--s-arriere), 50%);
+  --_couleur-arriere-vague: hsl(var(--hu4), var(--s-arriere), 50%);
 }
 :root .rest_pays {
-  --_couleur-arriere-vague: hsl(var(--hu2), var(--s-arriere), 50%);
+  --_couleur-arriere-vague: hsl(var(--hu5), var(--s-arriere), 50%);
 }
 
 .clr-primaire-100 {
