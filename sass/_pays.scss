@@ -1,8 +1,13 @@
 .intro__pays {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--couleur-arriere-accueil);
-    flex: 0 1 1100px;
     padding: 0 10rem;
+}
+
+.rest_pays {
+    position: relative;
+    background-color: var(--couleur-arriere-evenement);
 }
