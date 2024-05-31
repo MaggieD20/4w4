@@ -98,4 +98,12 @@ $agencement-couleur :(primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bl
     #evenement {
         --_couleur-arriere-vague: hsl(var(--hu5), var(--s-arriere), 50%);
     }
+
+    .intro__pays {
+        --_couleur-arriere-vague: hsl(var(--hu5), var(--s-arriere), 50%);
+    }
+
+    .rest_pays {
+        --_couleur-arriere-vague: hsl(var(--hu2), var(--s-arriere), 50%);
+    }
 }
